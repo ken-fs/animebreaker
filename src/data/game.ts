@@ -47,6 +47,8 @@ export type Boss = {
   avatarDrop: string | null;
   verified: boolean;
   tips: string[];
+  image: string | null;
+  imageAlt: string | null;
 };
 
 export type Pet = {

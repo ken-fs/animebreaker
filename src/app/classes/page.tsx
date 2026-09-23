@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { classTree, commandmentTotem } from "@/data/game";
 import { FaqJsonLd } from "@/components/json-ld";
@@ -48,6 +49,34 @@ export default function ClassesPage() {
             </li>
           ))}
         </ul>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2">
+          <figure>
+            <Image
+              src="/game/teleport-worlds.webp"
+              alt="The in-game Teleport menu listing Titan District, Hidden Leaf, Sin Village and Hunter City, with Class Tree access inside Hunter City"
+              width={576}
+              height={360}
+              className="w-full rounded-[var(--radius-container)] border rule"
+            />
+            <figcaption className="mt-2.5 text-xs text-muted-foreground">
+              The Teleport menu: five worlds, and the Class Tree is accessed from Hunter
+              City. Captured from public creator gameplay.
+            </figcaption>
+          </figure>
+          <figure>
+            <Image
+              src="/game/classtree-unlock.webp"
+              alt="The in-game unlock dialog for the Class Tree asking for 1.08 Qi Gold, with a Commandment Fragment despawn timer visible behind it"
+              width={576}
+              height={360}
+              className="w-full rounded-[var(--radius-container)] border rule"
+            />
+            <figcaption className="mt-2.5 text-xs text-muted-foreground">
+              The 1.08 Qi Gold unlock dialog — and a Commandment Fragment despawning in
+              the background. Captured from public creator gameplay.
+            </figcaption>
+          </figure>
+        </div>
         <p className="mt-4 max-w-[62ch] rounded-[var(--radius-container)] border border-dashed border-border p-4 text-sm text-muted-foreground">
           {classTree.note}
         </p>

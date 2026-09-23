@@ -18,7 +18,11 @@
       "cardCost": "50 Gold per spin",
       "cardPity": "Legendary pity at 500 spins",
       "boss": "Vegeta",
-      "systems": ["Alien Raid (warrior coins, race coins, Saiyan title, Scythe & Plant rings)", "Race gacha", "Offline upgrades"]
+      "systems": [
+        "Alien Raid (warrior coins, race coins, Saiyan title, Scythe & Plant rings)",
+        "Race gacha",
+        "Offline upgrades"
+      ]
     },
     {
       "slug": "titan-district",
@@ -29,7 +33,10 @@
       "cardCost": null,
       "cardPity": null,
       "boss": "Levi",
-      "systems": ["Weapon gacha + merging", "Titan Raid (weapon tokens, 1.5x Energy title)"]
+      "systems": [
+        "Weapon gacha + merging",
+        "Titan Raid (weapon tokens, 1.5x Energy title)"
+      ]
     },
     {
       "slug": "hidden-leaf",
@@ -40,7 +47,11 @@
       "cardCost": null,
       "cardPity": null,
       "boss": "Kakashi",
-      "systems": ["Ninja progression (level 100 = 2x Energy)", "Eye Technique gacha", "Red Cloud Totem (ring offerings)"]
+      "systems": [
+        "Ninja progression (level 100 = 2x Energy)",
+        "Eye Technique gacha",
+        "Red Cloud Totem (ring offerings)"
+      ]
     },
     {
       "slug": "sin-village",
@@ -51,7 +62,11 @@
       "cardCost": null,
       "cardPity": null,
       "boss": "Meliodas",
-      "systems": ["Amulet building (Sin raid)", "Sin gacha", "Commandment Totem (Update 1.5)"]
+      "systems": [
+        "Amulet building (Sin raid)",
+        "Sin gacha",
+        "Commandment Totem (Update 1.5)"
+      ]
     },
     {
       "slug": "hunter-city",
@@ -62,7 +77,12 @@
       "cardCost": "29.2T Gold per spin (creator-observed, late-game price)",
       "cardPity": null,
       "boss": "Unknown — added in Update 1",
-      "systems": ["Portals (C/B/A/S ranks) + Shadows", "Hunter Raid", "Class Tree (Update 1.5)", "Amp progression"]
+      "systems": [
+        "Portals (C/B/A/S ranks) + Shadows",
+        "Hunter Raid",
+        "Class Tree (Update 1.5)",
+        "Amp progression"
+      ]
     }
   ],
   "companions": [
@@ -153,7 +173,9 @@
         "The tutorial secret boss — killable early, and the accessory always drops.",
         "Every kill is a rarity roll (Common → Secret). Keep farming until a high roll lands.",
         "Worth returning to at endgame: a Secret Scouter is one of the biggest early Energy boosts."
-      ]
+      ],
+      "image": null,
+      "imageAlt": null
     },
     {
       "name": "Levi",
@@ -164,13 +186,15 @@
       "accessory": "Levi's cloak",
       "accessoryStat": "Damage",
       "accessoryMax": null,
-      "avatarDrop": "Levi Avatar — 12x Energy multiplier",
+      "avatarDrop": "Levi Avatar — 12x Energy, 0.01% drop (in-game View Drops panel)",
       "verified": true,
       "tips": [
         "The first secret boss that upgrades your build twice: accessory plus a separate avatar drop.",
         "The 12x Energy Levi Avatar is one of the biggest single upgrades in the game — players camp World 2 for it long after unlocking the portal.",
         "Accessory drops at 100%; only the rarity varies."
-      ]
+      ],
+      "image": "/game/levi-drops.webp",
+      "imageAlt": "Levi's in-game View Drops panel: 0.01% avatar, 100% accessory, Gold and a 4% raid ticket"
     },
     {
       "name": "Kakashi",
@@ -187,7 +211,9 @@
         "The dash requirement trips up most players — sprint into the fake wall, don't walk.",
         "Gold bonus compounds with Gold events and potions for faster card rolls.",
         "Pair with a Gold event window for the best farming math."
-      ]
+      ],
+      "image": "/game/kakashi-drops.webp",
+      "imageAlt": "The Copy Ninja's in-game View Drops panel: 100% accessory, Gold and raid ticket"
     },
     {
       "name": "Meliodas",
@@ -198,19 +224,39 @@
       "accessory": "Meliodas accessory",
       "accessoryStat": "Energy",
       "accessoryMax": null,
-      "avatarDrop": "Meliodas Avatar — reported ~0.01% drop, the rarest hunt in the game",
+      "avatarDrop": "Meliodas Avatar — 0.01% drop (in-game View Drops panel), the rarest hunt in the game",
       "verified": true,
       "tips": [
         "The final boss accessory in the chain, and it is an Energy roll.",
         "The ~0.01% avatar is a long Drop-potion session, not a one-off visit.",
         "Stack Drop potion + the 1.5x Drop mount before camping him."
-      ]
+      ],
+      "image": "/game/meliodas-drops.webp",
+      "imageAlt": "Meliodas's in-game View Drops panel: 0.01% avatar, 100% accessory, Gold and raid ticket"
     }
   ],
   "pets": [
-    { "name": "Dragon Sin", "world": "sin-village", "boostText": "1.4K Energy (Broken rarity, creator-measured)", "verified": false, "note": "Reported as the best pet in the game on the Update 0.5 build." },
-    { "name": "Lion Sin", "world": "sin-village", "boostText": "Below Dragon Sin", "verified": false, "note": "Creator comparison only; exact value unverified." },
-    { "name": "Sage Mode", "world": "hidden-leaf", "boostText": "Slightly above Secret-tier pets", "verified": false, "note": "Creator-reported pull from the Naruto-world egg." }
+    {
+      "name": "Dragon Sin",
+      "world": "sin-village",
+      "boostText": "1.4K Energy (Broken rarity, creator-measured)",
+      "verified": false,
+      "note": "Reported as the best pet in the game on the Update 0.5 build."
+    },
+    {
+      "name": "Lion Sin",
+      "world": "sin-village",
+      "boostText": "Below Dragon Sin",
+      "verified": false,
+      "note": "Creator comparison only; exact value unverified."
+    },
+    {
+      "name": "Sage Mode",
+      "world": "hidden-leaf",
+      "boostText": "Slightly above Secret-tier pets",
+      "verified": false,
+      "note": "Creator-reported pull from the Naruto-world egg."
+    }
   ],
   "petRules": [
     "Each world ships its own pet gacha ('Power' units) on top of the companion card.",
@@ -219,7 +265,11 @@
     "Simultaneous spins let you hatch up to 5 eggs at once."
   ],
   "races": {
-    "known": ["Namekian", "Majin", "Frieza"],
+    "known": [
+      "Namekian",
+      "Majin",
+      "Frieza"
+    ],
     "mechanics": [
       "Race Coins drop from regular enemies (~20% on Alien Planet NPCs) and feed the Races gacha.",
       "Your race is a permanent multiplier slot that stacks with companions, pets, accessories and everything else.",
@@ -229,8 +279,16 @@
     "note": "The full race list is not published anywhere we could verify. Three races are confirmed from gameplay footage; the rest are marked as a gap, not guessed."
   },
   "shadows": {
-    "knownNames": ["Shadow Monarch", "Ant King"],
-    "portalRanks": ["C", "B", "A", "S"],
+    "knownNames": [
+      "Shadow Monarch",
+      "Ant King"
+    ],
+    "portalRanks": [
+      "C",
+      "B",
+      "A",
+      "S"
+    ],
     "mechanics": [
       "Portals drop in the Hunter raid; open one from your inventory and clear its waves to earn Shadows.",
       "Shadows drop at every portal rank — higher ranks mean better odds.",
@@ -245,6 +303,7 @@
   "classTree": {
     "update": "Update 1.5",
     "mechanics": [
+      "Unlocking the Class Tree costs 1.08 Qi Gold (in-game unlock dialog).",
       "Six branches grow from the center; new branches grow out of the first one. Drag and zoom to explore.",
       "Nodes increase your multipliers; unlocking nodes costs Hunter class coins.",
       "Hunter class coins drop in Hunter City and in the Hunter raid portals.",
@@ -256,6 +315,7 @@
   "commandmentTotem": {
     "location": "Sin Village",
     "mechanics": [
+      "Unlocking the totem costs 41.3T Gold (in-game unlock dialog).",
       "10 stages; each stage needs 10 Commandment Fragments and the cost grows every stage.",
       "Stage rewards include Energy, Damage, Gold, card luck, card speed, card spins, gacha luck, crit damage — and +1 hero equip slot.",
       "A fragment appears around Sin Village every 30 minutes, stays for 15 minutes, then vanishes.",
@@ -264,28 +324,160 @@
     ]
   },
   "codes": [
-    { "code": "NEWTOTEM", "reward": "Emeralds + full potion set", "tier": "feature", "status": "verified", "lastChecked": "2026-09-19" },
-    { "code": "GUILDFIXES", "reward": "Emeralds + full potion set", "tier": "feature", "status": "verified", "lastChecked": "2026-09-19" },
-    { "code": "SHUTDOWN", "reward": "Emeralds + full potion set", "tier": "feature", "status": "verified", "lastChecked": "2026-09-19" },
-    { "code": "10KFAVORITES", "reward": "Emeralds + potions / Currency Box", "tier": "milestone", "status": "verified", "lastChecked": "2026-09-19" },
-    { "code": "6KCCU", "reward": "Emeralds + potions / Currency Box", "tier": "milestone", "status": "verified", "lastChecked": "2026-09-19" },
-    { "code": "5KFAVS", "reward": "Emeralds + potions / Currency Box", "tier": "milestone", "status": "verified", "lastChecked": "2026-09-19" },
-    { "code": "5KPLAYERS", "reward": "Emeralds + potions / Currency Box", "tier": "milestone", "status": "verified", "lastChecked": "2026-09-19" },
-    { "code": "8KCCU", "reward": "200 Emeralds", "tier": "emeralds", "status": "verified", "lastChecked": "2026-09-19" },
-    { "code": "7KCCU", "reward": "200 Emeralds", "tier": "emeralds", "status": "verified", "lastChecked": "2026-09-19" },
-    { "code": "750KVISITS", "reward": "200 Emeralds", "tier": "emeralds", "status": "verified", "lastChecked": "2026-09-19" },
-    { "code": "500KVISITS", "reward": "200 Emeralds", "tier": "emeralds", "status": "verified", "lastChecked": "2026-09-19" },
-    { "code": "300KVISITS", "reward": "200 Emeralds", "tier": "emeralds", "status": "verified", "lastChecked": "2026-09-19" },
-    { "code": "200KVISITS", "reward": "200 Emeralds", "tier": "emeralds", "status": "verified", "lastChecked": "2026-09-19" },
-    { "code": "100KVISITS", "reward": "200 Emeralds", "tier": "emeralds", "status": "verified", "lastChecked": "2026-09-19" },
-    { "code": "RELEASE", "reward": "2 of every potion", "tier": "launch", "status": "verified", "lastChecked": "2026-09-19" },
-    { "code": "2MVISITS", "reward": "Gems / potions (creator-reported)", "tier": "milestone", "status": "reported", "lastChecked": "2026-09-21" },
-    { "code": "10KCCU", "reward": "Gems (creator-reported)", "tier": "milestone", "status": "reported", "lastChecked": "2026-09-21" },
-    { "code": "NEWSHADOW", "reward": "Update 1 code (creator-reported)", "tier": "feature", "status": "reported", "lastChecked": "2026-09-21" },
-    { "code": "CLASSTREE", "reward": "Emeralds (creator-reported, Update 1.5)", "tier": "feature", "status": "reported", "lastChecked": "2026-09-22" },
-    { "code": "SORRYFORSHUTDOWN", "reward": "Emeralds (creator-reported, Update 1.5)", "tier": "feature", "status": "reported", "lastChecked": "2026-09-22" },
-    { "code": "3MVISITS", "reward": "Emeralds (creator-reported, Update 1.5)", "tier": "milestone", "status": "reported", "lastChecked": "2026-09-22" },
-    { "code": "30KFAVORITES", "reward": "Emeralds (creator-reported, Update 1.5)", "tier": "milestone", "status": "reported", "lastChecked": "2026-09-22" }
+    {
+      "code": "NEWTOTEM",
+      "reward": "Emeralds + full potion set",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-09-19"
+    },
+    {
+      "code": "GUILDFIXES",
+      "reward": "Emeralds + full potion set",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-09-19"
+    },
+    {
+      "code": "SHUTDOWN",
+      "reward": "Emeralds + full potion set",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-09-19"
+    },
+    {
+      "code": "10KFAVORITES",
+      "reward": "Emeralds + potions / Currency Box",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-09-19"
+    },
+    {
+      "code": "6KCCU",
+      "reward": "Emeralds + potions / Currency Box",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-09-19"
+    },
+    {
+      "code": "5KFAVS",
+      "reward": "Emeralds + potions / Currency Box",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-09-19"
+    },
+    {
+      "code": "5KPLAYERS",
+      "reward": "Emeralds + potions / Currency Box",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-09-19"
+    },
+    {
+      "code": "8KCCU",
+      "reward": "200 Emeralds",
+      "tier": "emeralds",
+      "status": "verified",
+      "lastChecked": "2026-09-19"
+    },
+    {
+      "code": "7KCCU",
+      "reward": "200 Emeralds",
+      "tier": "emeralds",
+      "status": "verified",
+      "lastChecked": "2026-09-19"
+    },
+    {
+      "code": "750KVISITS",
+      "reward": "200 Emeralds",
+      "tier": "emeralds",
+      "status": "verified",
+      "lastChecked": "2026-09-19"
+    },
+    {
+      "code": "500KVISITS",
+      "reward": "200 Emeralds",
+      "tier": "emeralds",
+      "status": "verified",
+      "lastChecked": "2026-09-19"
+    },
+    {
+      "code": "300KVISITS",
+      "reward": "200 Emeralds",
+      "tier": "emeralds",
+      "status": "verified",
+      "lastChecked": "2026-09-19"
+    },
+    {
+      "code": "200KVISITS",
+      "reward": "200 Emeralds",
+      "tier": "emeralds",
+      "status": "verified",
+      "lastChecked": "2026-09-19"
+    },
+    {
+      "code": "100KVISITS",
+      "reward": "200 Emeralds",
+      "tier": "emeralds",
+      "status": "verified",
+      "lastChecked": "2026-09-19"
+    },
+    {
+      "code": "RELEASE",
+      "reward": "2 of every potion",
+      "tier": "launch",
+      "status": "verified",
+      "lastChecked": "2026-09-19"
+    },
+    {
+      "code": "2MVISITS",
+      "reward": "Gems / potions (creator-reported)",
+      "tier": "milestone",
+      "status": "reported",
+      "lastChecked": "2026-09-21"
+    },
+    {
+      "code": "10KCCU",
+      "reward": "Gems (creator-reported)",
+      "tier": "milestone",
+      "status": "reported",
+      "lastChecked": "2026-09-21"
+    },
+    {
+      "code": "NEWSHADOW",
+      "reward": "Update 1 code (creator-reported)",
+      "tier": "feature",
+      "status": "reported",
+      "lastChecked": "2026-09-21"
+    },
+    {
+      "code": "CLASSTREE",
+      "reward": "Emeralds (creator-reported, Update 1.5)",
+      "tier": "feature",
+      "status": "reported",
+      "lastChecked": "2026-09-22"
+    },
+    {
+      "code": "SORRYFORSHUTDOWN",
+      "reward": "Emeralds (creator-reported, Update 1.5)",
+      "tier": "feature",
+      "status": "reported",
+      "lastChecked": "2026-09-22"
+    },
+    {
+      "code": "3MVISITS",
+      "reward": "Emeralds (creator-reported, Update 1.5)",
+      "tier": "milestone",
+      "status": "reported",
+      "lastChecked": "2026-09-22"
+    },
+    {
+      "code": "30KFAVORITES",
+      "reward": "Emeralds (creator-reported, Update 1.5)",
+      "tier": "milestone",
+      "status": "reported",
+      "lastChecked": "2026-09-22"
+    }
   ],
   "redeemSteps": [
     "Finish the tutorial — the Shop stays locked until you clear it.",
@@ -294,12 +486,36 @@
     "Enter the code exactly as written (codes are case-sensitive) and confirm."
   ],
   "systems": [
-    { "slug": "companions", "name": "Companions", "blurb": "Card-gacha units per world — your main Energy multiplier team." },
-    { "slug": "bosses", "name": "Secret Bosses", "blurb": "One hidden boss per world; accessories always drop, rarity is the roll." },
-    { "slug": "pets", "name": "Pets", "blurb": "Per-world 'Power' gacha — Mythical 3x, Secret 6x, Broken above that." },
-    { "slug": "races", "name": "Races", "blurb": "A permanent multiplier slot fed by Race Coins from normal farming." },
-    { "slug": "shadows", "name": "Shadows", "blurb": "Update 1 — portal-dropped allies you merge, enchant and level." },
-    { "slug": "classes", "name": "Class Tree", "blurb": "Update 1.5 — six branches of multiplier nodes paid in Hunter class coins." }
+    {
+      "slug": "companions",
+      "name": "Companions",
+      "blurb": "Card-gacha units per world — your main Energy multiplier team."
+    },
+    {
+      "slug": "bosses",
+      "name": "Secret Bosses",
+      "blurb": "One hidden boss per world; accessories always drop, rarity is the roll."
+    },
+    {
+      "slug": "pets",
+      "name": "Pets",
+      "blurb": "Per-world 'Power' gacha — Mythical 3x, Secret 6x, Broken above that."
+    },
+    {
+      "slug": "races",
+      "name": "Races",
+      "blurb": "A permanent multiplier slot fed by Race Coins from normal farming."
+    },
+    {
+      "slug": "shadows",
+      "name": "Shadows",
+      "blurb": "Update 1 — portal-dropped allies you merge, enchant and level."
+    },
+    {
+      "slug": "classes",
+      "name": "Class Tree",
+      "blurb": "Update 1.5 — six branches of multiplier nodes paid in Hunter class coins."
+    }
   ],
   "gaps": [
     "Full companion pools for Titan District, Hidden Leaf and Sin Village (only Alien Planet's five and two Hunter City names are verified).",

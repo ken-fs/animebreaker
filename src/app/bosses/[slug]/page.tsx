@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { bosses, companionsByWorld } from "@/data/game";
@@ -48,6 +49,21 @@ export default async function BossPage({ params }: PageProps<"/bosses/[slug]">) 
         </h1>
         <p className="mt-3 max-w-[62ch] text-muted-foreground">{boss.location}.</p>
       </header>
+
+      {boss.image && (
+        <figure className="pb-10">
+          <Image
+            src={boss.image}
+            alt={boss.imageAlt ?? ""}
+            width={576}
+            height={360}
+            className="w-full max-w-xl rounded-[var(--radius-container)] border rule"
+          />
+          <figcaption className="mt-2.5 text-xs text-muted-foreground">
+            {boss.imageAlt}. Captured from public creator gameplay.
+          </figcaption>
+        </figure>
+      )}
 
       <div className="grid gap-10 pb-16 lg:grid-cols-[1.35fr_1fr]">
         <div>
