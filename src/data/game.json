@@ -1,0 +1,314 @@
+{
+  "game": {
+    "name": "Anime Breaker",
+    "developer": "Anime Breaker team (Roblox group)",
+    "placeId": "109928390521457",
+    "universeId": "10675117523",
+    "robloxUrl": "https://www.roblox.com/games/109928390521457",
+    "currentUpdate": "Update 1.5 (Class Tree)",
+    "worlds": 5
+  },
+  "worlds": [
+    {
+      "slug": "alien-planet",
+      "name": "Alien Planet",
+      "order": 1,
+      "theme": "Dragon Ball",
+      "card": "Alien Card",
+      "cardCost": "50 Gold per spin",
+      "cardPity": "Legendary pity at 500 spins",
+      "boss": "Vegeta",
+      "systems": ["Alien Raid (warrior coins, race coins, Saiyan title, Scythe & Plant rings)", "Race gacha", "Offline upgrades"]
+    },
+    {
+      "slug": "titan-district",
+      "name": "Titan District",
+      "order": 2,
+      "theme": "Attack on Titan",
+      "card": "Titan Card",
+      "cardCost": null,
+      "cardPity": null,
+      "boss": "Levi",
+      "systems": ["Weapon gacha + merging", "Titan Raid (weapon tokens, 1.5x Energy title)"]
+    },
+    {
+      "slug": "hidden-leaf",
+      "name": "Hidden Leaf",
+      "order": 3,
+      "theme": "Naruto",
+      "card": "Leaf Card",
+      "cardCost": null,
+      "cardPity": null,
+      "boss": "Kakashi",
+      "systems": ["Ninja progression (level 100 = 2x Energy)", "Eye Technique gacha", "Red Cloud Totem (ring offerings)"]
+    },
+    {
+      "slug": "sin-village",
+      "name": "Sin Village",
+      "order": 4,
+      "theme": "Seven Deadly Sins",
+      "card": "Sin Card",
+      "cardCost": null,
+      "cardPity": null,
+      "boss": "Meliodas",
+      "systems": ["Amulet building (Sin raid)", "Sin gacha", "Commandment Totem (Update 1.5)"]
+    },
+    {
+      "slug": "hunter-city",
+      "name": "Hunter City",
+      "order": 5,
+      "theme": "Hunter x Hunter",
+      "card": "Hunter Card",
+      "cardCost": "29.2T Gold per spin (creator-observed, late-game price)",
+      "cardPity": null,
+      "boss": "Unknown — added in Update 1",
+      "systems": ["Portals (C/B/A/S ranks) + Shadows", "Hunter Raid", "Class Tree (Update 1.5)", "Amp progression"]
+    }
+  ],
+  "companions": [
+    {
+      "name": "Hidden Potential",
+      "slug": "hidden-potential",
+      "world": "alien-planet",
+      "rarity": "Mythical",
+      "source": "Alien Card / NPC avatar drop (0.1%)",
+      "boostText": "Strongest unit in Alien Planet (S-tier)",
+      "verified": true,
+      "note": "Also sold in a premium starter-bundle version in the shop."
+    },
+    {
+      "name": "Namekian Warrior",
+      "slug": "namekian-warrior",
+      "world": "alien-planet",
+      "rarity": "Legendary",
+      "source": "Alien Card / NPC avatar drop",
+      "boostText": "Solid substitute if early rolls miss Hidden Potential",
+      "verified": true,
+      "note": null
+    },
+    {
+      "name": "Strongest Human",
+      "slug": "strongest-human",
+      "world": "alien-planet",
+      "rarity": "Epic",
+      "source": "Alien Card / NPC avatar drop (5%)",
+      "boostText": "Serviceable filler while chasing Legendary+",
+      "verified": true,
+      "note": null
+    },
+    {
+      "name": "Master Inventor",
+      "slug": "master-inventor",
+      "world": "alien-planet",
+      "rarity": "Rare",
+      "source": "Alien Card",
+      "boostText": "+0.5 Energy (reported)",
+      "verified": true,
+      "note": "Only companion with a publicly reported flat boost value."
+    },
+    {
+      "name": "Namekian Healer",
+      "slug": "namekian-healer",
+      "world": "alien-planet",
+      "rarity": null,
+      "source": "Alien Card",
+      "boostText": "Only worth a slot while you have nothing better",
+      "verified": true,
+      "note": "Rarity not published in the source we verified."
+    },
+    {
+      "name": "Sung Jin Woo",
+      "slug": "sung-jin-woo",
+      "world": "hunter-city",
+      "rarity": null,
+      "source": "Hunter Card",
+      "boostText": "Endgame team target — creators build full teams of duplicates",
+      "verified": false,
+      "note": "Creator-reported (DomiBlox noob-to-pro series). Rarity and odds not yet verified in-game."
+    },
+    {
+      "name": "Sanjiro",
+      "slug": "sanjiro",
+      "world": "hunter-city",
+      "rarity": null,
+      "source": "Hunter Card",
+      "boostText": "Duplicate copies merge into higher multipliers (dupe system)",
+      "verified": false,
+      "note": "Creator-reported. Exact rarity unverified."
+    }
+  ],
+  "bosses": [
+    {
+      "name": "Vegeta",
+      "slug": "vegeta",
+      "world": "alien-planet",
+      "worldName": "Alien Planet",
+      "location": "Hidden area off the main path — look for the giant rock with an invisible opening",
+      "accessory": "Scouter",
+      "accessoryStat": "Power (Energy)",
+      "accessoryMax": "Secret tier rolls 2.5x → 4.5x (creator-measured)",
+      "avatarDrop": null,
+      "verified": true,
+      "tips": [
+        "The tutorial secret boss — killable early, and the accessory always drops.",
+        "Every kill is a rarity roll (Common → Secret). Keep farming until a high roll lands.",
+        "Worth returning to at endgame: a Secret Scouter is one of the biggest early Energy boosts."
+      ]
+    },
+    {
+      "name": "Levi",
+      "slug": "levi",
+      "world": "titan-district",
+      "worldName": "Titan District",
+      "location": "Behind a fake wall in the corner of the map",
+      "accessory": "Levi's cloak",
+      "accessoryStat": "Damage",
+      "accessoryMax": null,
+      "avatarDrop": "Levi Avatar — 12x Energy multiplier",
+      "verified": true,
+      "tips": [
+        "The first secret boss that upgrades your build twice: accessory plus a separate avatar drop.",
+        "The 12x Energy Levi Avatar is one of the biggest single upgrades in the game — players camp World 2 for it long after unlocking the portal.",
+        "Accessory drops at 100%; only the rarity varies."
+      ]
+    },
+    {
+      "name": "Kakashi",
+      "slug": "kakashi",
+      "world": "hidden-leaf",
+      "worldName": "Hidden Leaf",
+      "location": "Behind the mansion — find the fake wall and DASH through it (walking does not work)",
+      "accessory": "Kakashi's accessory",
+      "accessoryStat": "Gold",
+      "accessoryMax": null,
+      "avatarDrop": null,
+      "verified": true,
+      "tips": [
+        "The dash requirement trips up most players — sprint into the fake wall, don't walk.",
+        "Gold bonus compounds with Gold events and potions for faster card rolls.",
+        "Pair with a Gold event window for the best farming math."
+      ]
+    },
+    {
+      "name": "Meliodas",
+      "slug": "meliodas",
+      "world": "sin-village",
+      "worldName": "Sin Village",
+      "location": "Under the waterfall near the bridge (below the lake)",
+      "accessory": "Meliodas accessory",
+      "accessoryStat": "Energy",
+      "accessoryMax": null,
+      "avatarDrop": "Meliodas Avatar — reported ~0.01% drop, the rarest hunt in the game",
+      "verified": true,
+      "tips": [
+        "The final boss accessory in the chain, and it is an Energy roll.",
+        "The ~0.01% avatar is a long Drop-potion session, not a one-off visit.",
+        "Stack Drop potion + the 1.5x Drop mount before camping him."
+      ]
+    }
+  ],
+  "pets": [
+    { "name": "Dragon Sin", "world": "sin-village", "boostText": "1.4K Energy (Broken rarity, creator-measured)", "verified": false, "note": "Reported as the best pet in the game on the Update 0.5 build." },
+    { "name": "Lion Sin", "world": "sin-village", "boostText": "Below Dragon Sin", "verified": false, "note": "Creator comparison only; exact value unverified." },
+    { "name": "Sage Mode", "world": "hidden-leaf", "boostText": "Slightly above Secret-tier pets", "verified": false, "note": "Creator-reported pull from the Naruto-world egg." }
+  ],
+  "petRules": [
+    "Each world ships its own pet gacha ('Power' units) on top of the companion card.",
+    "A Mythical Power unit is worth 3x Energy; a Secret unit up to 6x (wiki-verified).",
+    "A Broken-rarity pet sits above Secret — creator-measured at 150x Energy (single source, treat as approximate).",
+    "Simultaneous spins let you hatch up to 5 eggs at once."
+  ],
+  "races": {
+    "known": ["Namekian", "Majin", "Frieza"],
+    "mechanics": [
+      "Race Coins drop from regular enemies (~20% on Alien Planet NPCs) and feed the Races gacha.",
+      "Your race is a permanent multiplier slot that stacks with companions, pets, accessories and everything else.",
+      "Auto Spin is supported; hover each slot in the Races window to see the boost it rolls.",
+      "Re-roll whenever your coin balance comfortably exceeds what you would lose."
+    ],
+    "note": "The full race list is not published anywhere we could verify. Three races are confirmed from gameplay footage; the rest are marked as a gap, not guessed."
+  },
+  "shadows": {
+    "knownNames": ["Shadow Monarch", "Ant King"],
+    "portalRanks": ["C", "B", "A", "S"],
+    "mechanics": [
+      "Portals drop in the Hunter raid; open one from your inventory and clear its waves to earn Shadows.",
+      "Shadows drop at every portal rank — higher ranks mean better odds.",
+      "Shadows come in combat types (Warrior, Healer, Tank) with their own stat lines.",
+      "Merge duplicate Shadows upward — Mythical merges into Secret — and a pity guarantees progress.",
+      "Shadow passives (rolled separately, e.g. 'Elite') add an Energy multiplier on top.",
+      "A shadow enchant gacha rolls up to 6x Energy at Secret rarity.",
+      "Portal upgrades (portal coins) raise portal level, up to 50 levels each."
+    ],
+    "note": "Added in Update 1 alongside Hunter City. Shadow Monarch and Ant King are confirmed by creator footage; the full shadow roster is a known gap."
+  },
+  "classTree": {
+    "update": "Update 1.5",
+    "mechanics": [
+      "Six branches grow from the center; new branches grow out of the first one. Drag and zoom to explore.",
+      "Nodes increase your multipliers; unlocking nodes costs Hunter class coins.",
+      "Hunter class coins drop in Hunter City and in the Hunter raid portals.",
+      "Awakening a class costs 1,000 coins (creator-observed); further nodes run about 5,000 each.",
+      "Nodes can also be bought with Gems."
+    ],
+    "note": "The individual class names on the tree are not yet published in any verifiable source. That list is a gap we are filling from gameplay, not from guesswork."
+  },
+  "commandmentTotem": {
+    "location": "Sin Village",
+    "mechanics": [
+      "10 stages; each stage needs 10 Commandment Fragments and the cost grows every stage.",
+      "Stage rewards include Energy, Damage, Gold, card luck, card speed, card spins, gacha luck, crit damage — and +1 hero equip slot.",
+      "A fragment appears around Sin Village every 30 minutes, stays for 15 minutes, then vanishes.",
+      "Each player gets their own fragment at a random spot; one fragment per appearance.",
+      "Fragments stop appearing once your totem is maxed."
+    ]
+  },
+  "codes": [
+    { "code": "NEWTOTEM", "reward": "Emeralds + full potion set", "tier": "feature", "status": "verified", "lastChecked": "2026-09-19" },
+    { "code": "GUILDFIXES", "reward": "Emeralds + full potion set", "tier": "feature", "status": "verified", "lastChecked": "2026-09-19" },
+    { "code": "SHUTDOWN", "reward": "Emeralds + full potion set", "tier": "feature", "status": "verified", "lastChecked": "2026-09-19" },
+    { "code": "10KFAVORITES", "reward": "Emeralds + potions / Currency Box", "tier": "milestone", "status": "verified", "lastChecked": "2026-09-19" },
+    { "code": "6KCCU", "reward": "Emeralds + potions / Currency Box", "tier": "milestone", "status": "verified", "lastChecked": "2026-09-19" },
+    { "code": "5KFAVS", "reward": "Emeralds + potions / Currency Box", "tier": "milestone", "status": "verified", "lastChecked": "2026-09-19" },
+    { "code": "5KPLAYERS", "reward": "Emeralds + potions / Currency Box", "tier": "milestone", "status": "verified", "lastChecked": "2026-09-19" },
+    { "code": "8KCCU", "reward": "200 Emeralds", "tier": "emeralds", "status": "verified", "lastChecked": "2026-09-19" },
+    { "code": "7KCCU", "reward": "200 Emeralds", "tier": "emeralds", "status": "verified", "lastChecked": "2026-09-19" },
+    { "code": "750KVISITS", "reward": "200 Emeralds", "tier": "emeralds", "status": "verified", "lastChecked": "2026-09-19" },
+    { "code": "500KVISITS", "reward": "200 Emeralds", "tier": "emeralds", "status": "verified", "lastChecked": "2026-09-19" },
+    { "code": "300KVISITS", "reward": "200 Emeralds", "tier": "emeralds", "status": "verified", "lastChecked": "2026-09-19" },
+    { "code": "200KVISITS", "reward": "200 Emeralds", "tier": "emeralds", "status": "verified", "lastChecked": "2026-09-19" },
+    { "code": "100KVISITS", "reward": "200 Emeralds", "tier": "emeralds", "status": "verified", "lastChecked": "2026-09-19" },
+    { "code": "RELEASE", "reward": "2 of every potion", "tier": "launch", "status": "verified", "lastChecked": "2026-09-19" },
+    { "code": "2MVISITS", "reward": "Gems / potions (creator-reported)", "tier": "milestone", "status": "reported", "lastChecked": "2026-09-21" },
+    { "code": "10KCCU", "reward": "Gems (creator-reported)", "tier": "milestone", "status": "reported", "lastChecked": "2026-09-21" },
+    { "code": "NEWSHADOW", "reward": "Update 1 code (creator-reported)", "tier": "feature", "status": "reported", "lastChecked": "2026-09-21" },
+    { "code": "CLASSTREE", "reward": "Emeralds (creator-reported, Update 1.5)", "tier": "feature", "status": "reported", "lastChecked": "2026-09-22" },
+    { "code": "SORRYFORSHUTDOWN", "reward": "Emeralds (creator-reported, Update 1.5)", "tier": "feature", "status": "reported", "lastChecked": "2026-09-22" },
+    { "code": "3MVISITS", "reward": "Emeralds (creator-reported, Update 1.5)", "tier": "milestone", "status": "reported", "lastChecked": "2026-09-22" },
+    { "code": "30KFAVORITES", "reward": "Emeralds (creator-reported, Update 1.5)", "tier": "milestone", "status": "reported", "lastChecked": "2026-09-22" }
+  ],
+  "redeemSteps": [
+    "Finish the tutorial — the Shop stays locked until you clear it.",
+    "Open the Shop and look for the small ticket icon at the bottom-left, next to the F2P Info button.",
+    "The redeem panel opens on top of the Exclusive Shop — if you only see packs and a countdown timer, you are in the wrong panel.",
+    "Enter the code exactly as written (codes are case-sensitive) and confirm."
+  ],
+  "systems": [
+    { "slug": "companions", "name": "Companions", "blurb": "Card-gacha units per world — your main Energy multiplier team." },
+    { "slug": "bosses", "name": "Secret Bosses", "blurb": "One hidden boss per world; accessories always drop, rarity is the roll." },
+    { "slug": "pets", "name": "Pets", "blurb": "Per-world 'Power' gacha — Mythical 3x, Secret 6x, Broken above that." },
+    { "slug": "races", "name": "Races", "blurb": "A permanent multiplier slot fed by Race Coins from normal farming." },
+    { "slug": "shadows", "name": "Shadows", "blurb": "Update 1 — portal-dropped allies you merge, enchant and level." },
+    { "slug": "classes", "name": "Class Tree", "blurb": "Update 1.5 — six branches of multiplier nodes paid in Hunter class coins." }
+  ],
+  "gaps": [
+    "Full companion pools for Titan District, Hidden Leaf and Sin Village (only Alien Planet's five and two Hunter City names are verified).",
+    "Full pet roster per world (three names confirmed; odds unpublished).",
+    "Full race list (three confirmed: Namekian, Majin, Frieza).",
+    "Full shadow roster (two confirmed: Shadow Monarch, Ant King).",
+    "Class names on the Class Tree (system mechanics verified, node names not).",
+    "Hunter City secret boss identity and drops.",
+    "Exact card-spin costs and pity rules outside Alien Planet.",
+    "Whether 'Gohan' and 'Majin Vegeta' heard in creator footage are companions, avatars, or both."
+  ]
+}

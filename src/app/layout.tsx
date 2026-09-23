@@ -1,0 +1,117 @@
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
+import "./globals.css";
+import { SiteNav } from "@/components/site-nav";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { WebsiteJsonLd } from "@/components/json-ld";
+import { SITE_URL } from "@/lib/site";
+import { AnalyticsConsent } from "@/components/analytics-consent";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Anime Breaker codes, secret bosses and companion odds",
+    template: "%s | Anime Breaker Reference",
+  },
+  description:
+    "Every working Anime Breaker code, all five worlds, secret boss locations and drops, companions, pets, races, shadows and the new Class Tree. Fan-made, no invented numbers.",
+  openGraph: {
+    type: "website",
+    siteName: "Anime Breaker Reference",
+    images: [{ url: "/og.jpg", width: 1200, height: 630 }],
+  },
+  robots: { index: true, follow: true },
+};
+
+export default function RootLayout({ children }: LayoutProps<"/">) {
+  return (
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} h-full`}
+      suppressHydrationWarning
+    >
+      <head>
+        {/*
+          Theme defaults to light rather than following the OS. This is a data
+          reference: tables, locations and drop numbers are read in daylight and
+          printed, and the light ground is the one the palette was designed
+          around. Dark stays available from the footer toggle, and a stored
+          choice always wins.
+
+          Runs before paint so a stored dark preference never flashes light.
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem("ab-theme");document.documentElement.classList.toggle("dark",t==="dark")}catch(e){}})()`,
+          }}
+        />
+      </head>
+      <body className="flex min-h-full flex-col antialiased">
+        <WebsiteJsonLd site={SITE_URL} name="Anime Breaker Reference" />
+        <SiteNav />
+        <main className="flex-1">{children}</main>
+        <SiteFooter />
+        <AnalyticsConsent />
+      </body>
+    </html>
+  );
+}
+
+function SiteFooter() {
+  return (
+    <footer className="mt-24 border-t rule">
+      <div className="mx-auto w-full max-w-6xl px-5 py-10">
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+          <div className="max-w-md">
+            <p className="text-sm font-medium">Anime Breaker Reference</p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              An independent player reference. Not affiliated with the Anime Breaker
+              developers or Roblox Corporation. Game names and assets belong to their
+              owners.
+            </p>
+          </div>
+          <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm" aria-label="Footer">
+            <Link href="/codes/" className="text-muted-foreground hover:text-foreground">
+              Codes
+            </Link>
+            <Link href="/bosses/" className="text-muted-foreground hover:text-foreground">
+              Bosses
+            </Link>
+            <Link href="/companions/" className="text-muted-foreground hover:text-foreground">
+              Companions
+            </Link>
+            <Link href="/shadows/" className="text-muted-foreground hover:text-foreground">
+              Shadows
+            </Link>
+            <Link href="/classes/" className="text-muted-foreground hover:text-foreground">
+              Class Tree
+            </Link>
+            <Link href="/about/" className="text-muted-foreground hover:text-foreground">
+              About
+            </Link>
+          </nav>
+        </div>
+        <div className="mt-8 flex items-center justify-between border-t rule pt-6">
+          <p className="text-xs text-muted-foreground">
+            Drops and multipliers are community-measured. Confirm in game before spending.
+          </p>
+          <ThemeToggle />
+        </div>
+      </div>
+    </footer>
+  );
+}
