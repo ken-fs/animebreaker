@@ -1,7 +1,7 @@
 # 部署说明
 
 站点：`animebreaker`（Cloudflare Worker，静态资源）
-域名：`animebreaker.xyz`（待注册）
+域名：`animebreaker.site`（待注册）
 
 ---
 
@@ -19,10 +19,10 @@
 1. 注册域名 → Cloudflare 加 zone → 改 NS → **dashboard 点「立即检查名称服务器」**
 2. **等 zone active**（animedice 教训：pending 时绑域名 = 证书签发失败且不重试）
 3. Worker → Settings → Builds → Connect Git（wrangler 无此 scope，必须 dashboard）
-5. 构建命令：`NEXT_PUBLIC_SITE_URL=https://animebreaker.xyz pnpm run build`
+5. 构建命令：`NEXT_PUBLIC_SITE_URL=https://animebreaker.site pnpm run build`
    部署命令：`npx wrangler deploy`
 6. 绑自定义域（含 www）
-7. 验证：`curl https://animebreaker.xyz/sitemap.xml` 域名指向正确 + 首页 200
+7. 验证：`curl https://animebreaker.site/sitemap.xml` 域名指向正确 + 首页 200
 
 ## 之后
 

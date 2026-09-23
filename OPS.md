@@ -9,7 +9,7 @@
 
 | 项 | 值 |
 |---|---|
-| 域名 | `animebreaker.xyz`（RDAP 已验证可注册，**待注册**） |
+| 域名 | `animebreaker.site`（RDAP 已验证可注册，**待注册**） |
 | 仓库 | https://github.com/ken-fs/animebreaker（✅ 已建已推，用钥匙串里 ken-fs 的 gho_ token 走 REST API 创建） |
 | Worker | `animebreaker`（待建） |
 | 游戏 | Anime Breaker（Roblox） |
@@ -87,11 +87,11 @@ p-iSZGoDE2I（SMG 0.5 更新）/ MMyrLgRTN1w（boss 位置）/ R8nbVEbXejc（sha
 
 ## 四、上线待办（人工）
 
-1. **注册 `animebreaker.xyz`**（RDAP 已验证可用）
+1. **注册 `animebreaker.site`**（RDAP 已验证可用）
 3. Cloudflare：建 Worker → Git 集成 → **等 zone active 再绑域名**（animedice 踩过证书坑）
-4. 构建命令：`NEXT_PUBLIC_SITE_URL=https://animebreaker.xyz pnpm run build`，部署 `npx wrangler deploy`
+4. 构建命令：`NEXT_PUBLIC_SITE_URL=https://animebreaker.site pnpm run build`，部署 `npx wrangler deploy`
 5. 建 GA4 属性 → 填入 `analytics-consent.tsx` 的 `GA_ID`
 6. GSC 加属性 → 服务账号 Owner → `scripts/gsc.mjs sitemaps` 提交
 7. 生成 IndexNow key → `public/<key>.txt` + `scripts/submit-indexnow.mjs`
 8. 加进 `scripts/verify-baseline.json` 的 browserPages
-9. Clash `Merge.yaml` 加 `DOMAIN-SUFFIX,animebreaker.xyz,DIRECT` + fake-ip-filter
+9. Clash `Merge.yaml` 加 `DOMAIN-SUFFIX,animebreaker.site,DIRECT` + fake-ip-filter
