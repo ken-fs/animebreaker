@@ -10,7 +10,7 @@
 | 项 | 值 |
 |---|---|
 | 域名 | `animebreaker.xyz`（RDAP 已验证可注册，**待注册**） |
-| 仓库 | 待创建（gh CLI 未登录，需手动） |
+| 仓库 | https://github.com/ken-fs/animebreaker（✅ 已建已推，用钥匙串里 ken-fs 的 gho_ token 走 REST API 创建） |
 | Worker | `animebreaker`（待建） |
 | 游戏 | Anime Breaker（Roblox） |
 | placeId / universeId | `109928390521457` / `10675117523` |
@@ -88,7 +88,6 @@ p-iSZGoDE2I（SMG 0.5 更新）/ MMyrLgRTN1w（boss 位置）/ R8nbVEbXejc（sha
 ## 四、上线待办（人工）
 
 1. **注册 `animebreaker.xyz`**（RDAP 已验证可用）
-2. **建 GitHub 仓库** `ken-fs/animebreaker`（gh 未登录，手动建后 `git remote add`）
 3. Cloudflare：建 Worker → Git 集成 → **等 zone active 再绑域名**（animedice 踩过证书坑）
 4. 构建命令：`NEXT_PUBLIC_SITE_URL=https://animebreaker.xyz pnpm run build`，部署 `npx wrangler deploy`
 5. 建 GA4 属性 → 填入 `analytics-consent.tsx` 的 `GA_ID`
