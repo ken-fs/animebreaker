@@ -11,12 +11,12 @@
 |---|---|
 | 域名 | `animebreaker.site`（RDAP 已验证可注册，**待注册**） |
 | 仓库 | https://github.com/ken-fs/animebreaker（✅ 已建已推，用钥匙串里 ken-fs 的 gho_ token 走 REST API 创建） |
-| Worker | `animebreaker`（待建） |
+| Worker | `animebreaker` ✅ 已部署 + Builds 触发器 `1bba931b` |
 | 游戏 | Anime Breaker（Roblox） |
 | placeId / universeId | `109928390521457` / `10675117523` |
 | 页面数 | 26（10 顶层 + 7 伙伴 + 4 boss + 404 + robots + sitemap） |
 | 技术栈 | 同 animedice：Next.js 16 · Tailwind v4 · shadcn/ui · Geist · Phosphor · `output: export` |
-| GA4 | **未创建**（`analytics-consent.tsx` 的 `GA_ID = ""`，空 = 横幅不显示、完全不加载） |
+| GA4 | `G-HSS0JNT1SP` 同意门控 ✅（实测接受前零加载） |
 | 主题色 | 浅底 + 深紫罗兰 accent（5 个竞品全暗色 → 反向走；与 animedice 的琥珀色区分） |
 
 ### 页面结构
@@ -95,3 +95,12 @@ p-iSZGoDE2I（SMG 0.5 更新）/ MMyrLgRTN1w（boss 位置）/ R8nbVEbXejc（sha
 7. 生成 IndexNow key → `public/<key>.txt` + `scripts/submit-indexnow.mjs`
 8. 加进 `scripts/verify-baseline.json` 的 browserPages
 9. Clash `Merge.yaml` 加 `DOMAIN-SUFFIX,animebreaker.site,DIRECT` + fake-ip-filter
+
+## 五、CI 管线档案（2026-09-23 接线）
+
+- trigger: `1bba931b-e309-4d99-9a9b-21664c29b736`（main → build+deploy）
+- repo connection: `ae4321bd`（ken-fs/animebreaker）
+- **build token 借用 ghostdriver 的 `14263f1a`**（API 新建的 build token 全部被判定 deleted/rolled，dashboard 建的才有效——CF 侧怪癖，待观察）
+  ⚠️ 若 ghostdriver 的 token 被轮换，animebreaker 构建会挂 → 重建触发器绑定新可用 token 即可
+- 环境变量：NEXT_PUBLIC_SITE_URL=https://animebreaker.site（builds settings 内）
+- ⚠️ DEPLOY.md 的 GHA 方案已废弃（workflow 已删），CF Builds 是唯一 CI
