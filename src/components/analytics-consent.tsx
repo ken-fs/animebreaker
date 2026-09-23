@@ -20,7 +20,7 @@ const KEY = "ab-consent";
 // GA4 property for animebreaker.xyz. Empty = analytics fully disabled until
 // the property exists (create it, then paste the ID here). Never reuse another
 // site's ID: it silently pollutes their data.
-const GA_ID = "";
+const GA_ID = "G-HSS0JNT1SP";
 
 type Choice = "accepted" | "declined";
 
