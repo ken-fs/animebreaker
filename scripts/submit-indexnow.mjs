@@ -9,24 +9,26 @@ import { readFileSync } from "node:fs";
 
 // Read the generated JSON directly. Importing src/data/game.ts would need a TS
 // loader, and this script has to run in a bare Node context.
-const { units } = JSON.parse(
+const { companions, bosses } = JSON.parse(
   readFileSync(new URL("../src/data/game.json", import.meta.url), "utf8")
 );
 
-const HOST = "animedice.xyz";
+const HOST = "animebreaker.site";
 const KEY = readFileSync(new URL("../.indexnow-key", import.meta.url), "utf8").trim();
 
 const PATHS = [
   "/",
   "/codes/",
-  "/units/",
-  "/grades/",
-  "/dice/",
-  "/traits/",
-  "/mutations/",
+  "/bosses/",
+  "/companions/",
+  "/pets/",
+  "/races/",
+  "/shadows/",
+  "/classes/",
   "/guide/",
   "/about/",
-  ...units.map((u) => `/units/${u.slug}/`),
+  ...companions.map((c) => `/companions/${c.slug}/`),
+  ...bosses.map((b) => `/bosses/${b.slug}/`),
 ];
 
 const body = {
