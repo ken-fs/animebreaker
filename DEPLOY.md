@@ -9,10 +9,10 @@
 
 | 项 | 状态 |
 |---|---|
-| 代码 | ✅ 本地构建通过（26 页） |
+| 代码 | ✅ 已推 main（4 commits） |
 | 仓库 | ✅ https://github.com/ken-fs/animebreaker（main 已推） |
-| Worker | ⬜ 待建 |
-| 域名 | ⬜ 待注册（RDAP 2026-09-23 验证可用） |
+| Worker | ✅ 已部署 https://animebreaker.493129720ljw.workers.dev（本地 wrangler，zone active 后由 GHA/CF 接管） |
+| 域名 | ✅ animebreaker.site（Spaceship 已注册，NS 已指 CF，zone pending 等激活检查） |
 
 ## 上线步骤（顺序敏感）
 
