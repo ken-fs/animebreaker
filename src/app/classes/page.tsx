@@ -59,8 +59,9 @@ export default function ClassesPage() {
               className="w-full rounded-[var(--radius-container)] border rule"
             />
             <figcaption className="mt-2.5 text-xs text-muted-foreground">
-              The Teleport menu: five worlds, and the Class Tree is accessed from Hunter
-              City. Captured from public creator gameplay.
+              A Teleport menu capture from the Update 1.5 build — five worlds at the time;
+              the Class Tree is accessed from Hunter City. Captured from public creator
+              gameplay.
             </figcaption>
           </figure>
           <figure>

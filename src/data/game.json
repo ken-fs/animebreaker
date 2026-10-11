@@ -5,8 +5,8 @@
     "placeId": "109928390521457",
     "universeId": "10675117523",
     "robloxUrl": "https://www.roblox.com/games/109928390521457",
-    "currentUpdate": "Update 1.5 (Class Tree)",
-    "worlds": 5
+    "currentUpdate": "Update 3 (Clover Village & Ghoul City)",
+    "worlds": 8
   },
   "worlds": [
     {
@@ -82,6 +82,49 @@
         "Hunter Raid",
         "Class Tree (Update 1.5)",
         "Amp progression"
+      ]
+    },
+    {
+      "slug": "pirate-village",
+      "name": "Pirate Village",
+      "order": 6,
+      "theme": "One Piece",
+      "card": "Pirate Card",
+      "cardCost": null,
+      "cardPity": null,
+      "boss": "Unknown — added in Update 2 (22 September 2026)",
+      "systems": [
+        "Harbor feature — berries and devil fruit passives"
+      ]
+    },
+    {
+      "slug": "clover-village",
+      "name": "Clover Village",
+      "order": 7,
+      "theme": "Black Clover",
+      "card": "Clover Card",
+      "cardCost": null,
+      "cardPity": null,
+      "boss": "Unknown — shipped with a secret boss in Update 3 (30 September 2026)",
+      "systems": [
+        "Magic Stats — spin four graded multipliers",
+        "Magic Knight Hub — Clover awakening quests and grimoire stats",
+        "Squads — spin for a flat multiplier",
+        "Clover Raid",
+        "Hallway medium difficulty, Salamander mount"
+      ]
+    },
+    {
+      "slug": "ghoul-city",
+      "name": "Ghoul City",
+      "order": 8,
+      "theme": "Tokyo Ghoul",
+      "card": "Ghoul Card",
+      "cardCost": null,
+      "cardPity": null,
+      "boss": "Unknown — secret boss in the Ghoul Lab (6 October 2026)",
+      "systems": [
+        "Ghoul Lab"
       ]
     }
   ],
@@ -329,154 +372,343 @@
       "reward": "Emeralds + full potion set",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-09-19"
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "GUILDFIXES",
       "reward": "Emeralds + full potion set",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-09-19"
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "SHUTDOWN",
       "reward": "Emeralds + full potion set",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-09-19"
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "10KFAVORITES",
       "reward": "Emeralds + potions / Currency Box",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-09-19"
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "6KCCU",
       "reward": "Emeralds + potions / Currency Box",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-09-19"
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "5KFAVS",
       "reward": "Emeralds + potions / Currency Box",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-09-19"
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "5KPLAYERS",
       "reward": "Emeralds + potions / Currency Box",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-09-19"
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "8KCCU",
       "reward": "200 Emeralds",
       "tier": "emeralds",
       "status": "verified",
-      "lastChecked": "2026-09-19"
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "7KCCU",
       "reward": "200 Emeralds",
       "tier": "emeralds",
       "status": "verified",
-      "lastChecked": "2026-09-19"
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "750KVISITS",
       "reward": "200 Emeralds",
       "tier": "emeralds",
       "status": "verified",
-      "lastChecked": "2026-09-19"
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "500KVISITS",
       "reward": "200 Emeralds",
       "tier": "emeralds",
       "status": "verified",
-      "lastChecked": "2026-09-19"
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "300KVISITS",
       "reward": "200 Emeralds",
       "tier": "emeralds",
       "status": "verified",
-      "lastChecked": "2026-09-19"
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "200KVISITS",
       "reward": "200 Emeralds",
       "tier": "emeralds",
       "status": "verified",
-      "lastChecked": "2026-09-19"
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "100KVISITS",
       "reward": "200 Emeralds",
       "tier": "emeralds",
       "status": "verified",
-      "lastChecked": "2026-09-19"
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "RELEASE",
       "reward": "2 of every potion",
       "tier": "launch",
       "status": "verified",
-      "lastChecked": "2026-09-19"
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "2MVISITS",
       "reward": "Gems / potions (creator-reported)",
       "tier": "milestone",
-      "status": "reported",
-      "lastChecked": "2026-09-21"
+      "status": "verified",
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "10KCCU",
       "reward": "Gems (creator-reported)",
       "tier": "milestone",
-      "status": "reported",
-      "lastChecked": "2026-09-21"
+      "status": "verified",
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "NEWSHADOW",
       "reward": "Update 1 code (creator-reported)",
       "tier": "feature",
-      "status": "reported",
-      "lastChecked": "2026-09-21"
+      "status": "verified",
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "CLASSTREE",
       "reward": "Emeralds (creator-reported, Update 1.5)",
       "tier": "feature",
-      "status": "reported",
-      "lastChecked": "2026-09-22"
+      "status": "verified",
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "SORRYFORSHUTDOWN",
       "reward": "Emeralds (creator-reported, Update 1.5)",
       "tier": "feature",
-      "status": "reported",
-      "lastChecked": "2026-09-22"
+      "status": "verified",
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "3MVISITS",
       "reward": "Emeralds (creator-reported, Update 1.5)",
       "tier": "milestone",
-      "status": "reported",
-      "lastChecked": "2026-09-22"
+      "status": "verified",
+      "lastChecked": "2026-10-11"
     },
     {
       "code": "30KFAVORITES",
       "reward": "Emeralds (creator-reported, Update 1.5)",
       "tier": "milestone",
-      "status": "reported",
-      "lastChecked": "2026-09-22"
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "SORRYFORSHUT",
+      "reward": "Potions (update compensation)",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "12MVISITS",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "100KFAVORITES",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "NEWTOWER",
+      "reward": "200 Emeralds + potions",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "NEWCOMPANIONS",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "SORRYFORGRIMS",
+      "reward": "200 Emeralds + potions",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "10MVISITS",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "90KFAVORITES",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "NEWGRIMOIRE",
+      "reward": "200 Emeralds + potions",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "TRIALMEDIUM",
+      "reward": "200 Emeralds + potions",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "17KCCU",
+      "reward": "250 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "7MVISITS",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "80KFAVORITES",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "NEWJEWELS",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "NEWCRAFT",
+      "reward": "200 Emeralds + potions",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "16KCCU",
+      "reward": "200 Emeralds + potions",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "5MVISITS",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "70KFAVORITES",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "NEWINVASION",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "NEWHARBOR",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "40KFAVORITES",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "20KFAVORITES",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "NEWPORTAL",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "14MVISITS",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "110KFAVORITES",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "NEWKAGUNE",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
+    },
+    {
+      "code": "NEWGHOUL",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-11"
     }
   ],
   "redeemSteps": [
@@ -518,8 +750,8 @@
     }
   ],
   "gaps": [
+    "Full mechanics for Pirate Village, Clover Village and Ghoul City beyond the verified headline items (cards, raids, bosses) — the gaps close as creators document each zone.",
     "Full companion pools for Titan District, Hidden Leaf and Sin Village (only Alien Planet's five and two Hunter City names are verified).",
-    "Full pet roster per world (three names confirmed; odds unpublished).",
     "Full race list (three confirmed: Namekian, Majin, Frieza).",
     "Full shadow roster (two confirmed: Shadow Monarch, Ant King).",
     "Class names on the Class Tree (system mechanics verified, node names not).",

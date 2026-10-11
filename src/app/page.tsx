@@ -15,7 +15,7 @@ import { CopyCode } from "@/components/copy-code";
 export const metadata: Metadata = {
   title: "Anime Breaker codes, secret bosses and companion odds",
   description:
-    "Every working Anime Breaker code, all five worlds, secret boss locations with guaranteed accessory drops, companions, pets, races, shadows and the Update 1.5 Class Tree. Fan-made, with the source for every fact.",
+    "Every working Anime Breaker code, all eight worlds, secret boss locations with guaranteed accessory drops, companions, pets, races, shadows and the Update 1.5 Class Tree. Fan-made, with the source for every fact.",
   alternates: { canonical: "/" },
 };
 
@@ -89,11 +89,12 @@ export default function HomePage() {
       </section>
 
       <section className="pb-16">
-        <h2 className="text-sm font-medium">The five worlds</h2>
+        <h2 className="text-sm font-medium">The eight worlds</h2>
         <p className="mt-1 max-w-[62ch] text-sm text-muted-foreground">
           Progress is measured in worlds: sequential anime maps, each with its own
-          companion card, pet gacha, raid and hidden secret boss. World 5, Hunter City,
-          arrived with Update 1.
+          companion card, pet gacha, raid and hidden secret boss. Hunter City (World 5)
+          arrived with Update 1; Pirate Village, Clover Village and Ghoul City followed
+          in Updates 2 and 3.
         </p>
         <ol className="mt-5 grid gap-px overflow-hidden rounded-[var(--radius-container)] border rule bg-border">
           {worlds.map((w) => (

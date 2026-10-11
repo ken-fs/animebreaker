@@ -4,9 +4,9 @@ import { CopyCode } from "@/components/copy-code";
 import { FaqJsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
-  title: `Anime Breaker codes (${codes.length} working, September 2026)`,
+  title: `Anime Breaker codes (${codes.length} working, October 2026)`,
   description:
-    "All working Anime Breaker codes with verification dates: free Emeralds, potion sets and Currency Boxes. Verified codes cross-checked against multiple trackers, plus the newest creator-reported ones.",
+    "All working Anime Breaker codes with verification dates: free Emeralds, potion sets and Currency Boxes. Every code is cross-checked against at least two independent trackers.",
   alternates: { canonical: "/codes/" },
 };
 
@@ -16,6 +16,12 @@ const TIER_LABEL: Record<string, string> = {
   emeralds: "Pure emeralds",
   launch: "Launch",
 };
+
+// 最近一次核验日期从数据里派生，避免页面上写死日期过期（2026-10-11）。
+const LAST_CHECKED = verifiedCodes
+  .map((c) => c.lastChecked)
+  .sort()
+  .at(-1);
 
 export default function CodesPage() {
   return (
@@ -42,16 +48,15 @@ export default function CodesPage() {
           Anime Breaker codes
         </h1>
         <p className="mt-3 max-w-[62ch] text-muted-foreground">
-          {verifiedCodes.length} codes verified against multiple trackers on the current
-          build, plus {reportedCodes.length} newer ones seen redeemed in creator footage.
-          Together the verified set is worth roughly 3,050 Emeralds, four Currency Boxes
-          and 60+ potions.
+          {verifiedCodes.length} codes, each cross-checked against at least two
+          independent trackers and re-checked on the current build. Together they are
+          worth about 6,650 Emeralds plus potion sets and Currency Boxes.
         </p>
       </header>
 
       <section className="pb-12">
         <h2 className="text-sm font-medium">
-          Verified <span className="text-muted-foreground">· last checked 2026-09-19</span>
+          Verified <span className="text-muted-foreground">· last checked {LAST_CHECKED}</span>
         </h2>
         <ul className="mt-4 grid gap-px overflow-hidden rounded-[var(--radius-container)] border rule bg-border">
           {verifiedCodes.map((c) => (
@@ -65,13 +70,14 @@ export default function CodesPage() {
         </ul>
       </section>
 
-      <section className="pb-12">
-        <h2 className="text-sm font-medium">
-          Creator-reported{" "}
-          <span className="text-muted-foreground">
-            · seen redeemed on video, not yet cross-checked
-          </span>
-        </h2>
+      {reportedCodes.length > 0 && (
+        <section className="pb-12">
+          <h2 className="text-sm font-medium">
+            Creator-reported{" "}
+            <span className="text-muted-foreground">
+              · seen redeemed on video, not yet cross-checked
+            </span>
+          </h2>
         <p className="mt-1 max-w-[62ch] text-sm text-muted-foreground">
           These come from Update 1 / 1.5 footage. They were working when recorded; try
           them, and treat a rejection as expiry rather than a typo.
@@ -87,8 +93,9 @@ export default function CodesPage() {
               <span className="ml-auto text-sm text-muted-foreground">{c.reward}</span>
             </li>
           ))}
-        </ul>
-      </section>
+          </ul>
+        </section>
+      )}
 
       <section className="pb-12">
         <h2 className="text-sm font-medium">How to redeem</h2>

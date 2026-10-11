@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     template: "%s | Anime Breaker Reference",
   },
   description:
-    "Every working Anime Breaker code, all five worlds, secret boss locations and drops, companions, pets, races, shadows and the new Class Tree. Fan-made, no invented numbers.",
+    "Every working Anime Breaker code, all eight worlds, secret boss locations and drops, companions, pets, races, shadows and the new Class Tree. Fan-made, no invented numbers.",
   openGraph: {
     type: "website",
     siteName: "Anime Breaker Reference",
