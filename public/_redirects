@@ -1,0 +1,3 @@
+# Cloudflare's asset uploader skips dot-directories, so the deploy marker ships
+# as /deploy-marker.txt. This rewrite keeps the fleet-standard URL working.
+/.well-known/anvilwiki-deploy.txt  /deploy-marker.txt  200
