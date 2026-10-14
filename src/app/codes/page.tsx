@@ -50,7 +50,7 @@ export default function CodesPage() {
         <p className="mt-3 max-w-[62ch] text-muted-foreground">
           {verifiedCodes.length} codes, each cross-checked against at least two
           independent trackers and re-checked on the current build. Together they are
-          worth about 6,650 Emeralds plus potion sets and Currency Boxes.
+          worth about 7,450 Emeralds plus potion sets and Currency Boxes.
         </p>
       </header>
 

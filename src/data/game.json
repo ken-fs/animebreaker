@@ -372,343 +372,371 @@
       "reward": "Emeralds + full potion set",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "GUILDFIXES",
       "reward": "Emeralds + full potion set",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "SHUTDOWN",
       "reward": "Emeralds + full potion set",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "10KFAVORITES",
       "reward": "Emeralds + potions / Currency Box",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "6KCCU",
       "reward": "Emeralds + potions / Currency Box",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "5KFAVS",
       "reward": "Emeralds + potions / Currency Box",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "5KPLAYERS",
       "reward": "Emeralds + potions / Currency Box",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "8KCCU",
       "reward": "200 Emeralds",
       "tier": "emeralds",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "7KCCU",
       "reward": "200 Emeralds",
       "tier": "emeralds",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "750KVISITS",
       "reward": "200 Emeralds",
       "tier": "emeralds",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "500KVISITS",
       "reward": "200 Emeralds",
       "tier": "emeralds",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "300KVISITS",
       "reward": "200 Emeralds",
       "tier": "emeralds",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "200KVISITS",
       "reward": "200 Emeralds",
       "tier": "emeralds",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "100KVISITS",
       "reward": "200 Emeralds",
       "tier": "emeralds",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "RELEASE",
       "reward": "2 of every potion",
       "tier": "launch",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "2MVISITS",
       "reward": "Gems / potions (creator-reported)",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "10KCCU",
       "reward": "Gems (creator-reported)",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "NEWSHADOW",
       "reward": "Update 1 code (creator-reported)",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "CLASSTREE",
       "reward": "Emeralds (creator-reported, Update 1.5)",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "SORRYFORSHUTDOWN",
       "reward": "Emeralds (creator-reported, Update 1.5)",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "3MVISITS",
       "reward": "Emeralds (creator-reported, Update 1.5)",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "30KFAVORITES",
       "reward": "Emeralds (creator-reported, Update 1.5)",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "SORRYFORSHUT",
       "reward": "Potions (update compensation)",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "12MVISITS",
       "reward": "200 Emeralds",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "100KFAVORITES",
       "reward": "200 Emeralds",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "NEWTOWER",
       "reward": "200 Emeralds + potions",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "NEWCOMPANIONS",
       "reward": "200 Emeralds",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "SORRYFORGRIMS",
       "reward": "200 Emeralds + potions",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "10MVISITS",
       "reward": "200 Emeralds",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "90KFAVORITES",
       "reward": "200 Emeralds",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "NEWGRIMOIRE",
       "reward": "200 Emeralds + potions",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "TRIALMEDIUM",
       "reward": "200 Emeralds + potions",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "17KCCU",
       "reward": "250 Emeralds",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "7MVISITS",
       "reward": "200 Emeralds",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "80KFAVORITES",
       "reward": "200 Emeralds",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "NEWJEWELS",
       "reward": "200 Emeralds",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "NEWCRAFT",
       "reward": "200 Emeralds + potions",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "16KCCU",
       "reward": "200 Emeralds + potions",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "5MVISITS",
       "reward": "200 Emeralds",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "70KFAVORITES",
       "reward": "200 Emeralds",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "NEWINVASION",
       "reward": "200 Emeralds",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "NEWHARBOR",
       "reward": "200 Emeralds",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "40KFAVORITES",
       "reward": "200 Emeralds",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "20KFAVORITES",
       "reward": "200 Emeralds",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "NEWPORTAL",
       "reward": "200 Emeralds",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "14MVISITS",
       "reward": "200 Emeralds",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "110KFAVORITES",
       "reward": "200 Emeralds",
       "tier": "milestone",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "NEWKAGUNE",
       "reward": "200 Emeralds",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
     },
     {
       "code": "NEWGHOUL",
       "reward": "200 Emeralds",
       "tier": "feature",
       "status": "verified",
-      "lastChecked": "2026-10-11"
+      "lastChecked": "2026-10-14"
+    },
+    {
+      "code": "16MVISITS",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-14"
+    },
+    {
+      "code": "115KFAVORITES",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-14"
+    },
+    {
+      "code": "NEWTITAN",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-14"
+    },
+    {
+      "code": "NEWCHIMERA",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-14"
     }
   ],
   "redeemSteps": [
