@@ -368,6 +368,34 @@
   },
   "codes": [
     {
+      "code": "18MVISITS",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-18"
+    },
+    {
+      "code": "CURSEDHIGH",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-18"
+    },
+    {
+      "code": "HALLOWEEN",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-18"
+    },
+    {
+      "code": "NEWAURA",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-18"
+    },
+    {
       "code": "NEWTOTEM",
       "reward": "Emeralds + full potion set",
       "tier": "feature",
