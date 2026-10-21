@@ -5,7 +5,7 @@
     "placeId": "109928390521457",
     "universeId": "10675117523",
     "robloxUrl": "https://www.roblox.com/games/109928390521457",
-    "currentUpdate": "Update 3 (Clover Village & Ghoul City)",
+    "currentUpdate": "Update 5.5 (Cursed Defense & Talismans)",
     "worlds": 8
   },
   "worlds": [
@@ -367,6 +367,41 @@
     ]
   },
   "codes": [
+    {
+      "code": "SHUTSHUT",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-21"
+    },
+    {
+      "code": "20MVISITS",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-21"
+    },
+    {
+      "code": "120KFAVORITES",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-21"
+    },
+    {
+      "code": "TALISMANS",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-21"
+    },
+    {
+      "code": "NEWDEFENSE",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-21"
+    },
     {
       "code": "18MVISITS",
       "reward": "200 Emeralds",
@@ -806,6 +841,7 @@
     }
   ],
   "gaps": [
+    "Zone 9 (Cursed High, live since 2026-10-15) and the Update 5.5 systems — Cursed Defense, Talismans and Training — are not documented here yet: the codes above cover it, the mechanics wait for a second source.",
     "Full mechanics for Pirate Village, Clover Village and Ghoul City beyond the verified headline items (cards, raids, bosses) — the gaps close as creators document each zone.",
     "Full companion pools for Titan District, Hidden Leaf and Sin Village (only Alien Planet's five and two Hunter City names are verified).",
     "Full race list (three confirmed: Namekian, Majin, Frieza).",

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { codes, verifiedCodes, reportedCodes, redeemSteps } from "@/data/game";
+import { codes, verifiedCodes, reportedCodes, redeemSteps, codesEmeraldTotal } from "@/data/game";
 import { CopyCode } from "@/components/copy-code";
 import { FaqJsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
   title: `Anime Breaker codes (${codes.length} working, October 2026)`,
   description:
-    "All working Anime Breaker codes with verification dates: free Emeralds, potion sets and Currency Boxes. Every code is cross-checked against at least two independent trackers.",
+    "All working Anime Breaker codes with verification dates: free Emeralds, potion sets and Currency Boxes. Every code is cross-checked against independent sources — tracker pages and in-game footage.",
   alternates: { canonical: "/codes/" },
 };
 
@@ -48,9 +48,10 @@ export default function CodesPage() {
           Anime Breaker codes
         </h1>
         <p className="mt-3 max-w-[62ch] text-muted-foreground">
-          {verifiedCodes.length} codes, each cross-checked against at least two
-          independent trackers and re-checked on the current build. Together they are
-          worth about 7,450 Emeralds plus potion sets and Currency Boxes.
+          {verifiedCodes.length} codes, each cross-checked against independent sources —
+          tracker pages and in-game footage — and re-checked on the current build.
+          Together they are worth about {codesEmeraldTotal.toLocaleString("en-US")}{" "}
+          Emeralds plus potion sets and Currency Boxes.
         </p>
       </header>
 

@@ -93,6 +93,12 @@ export const companionsByWorld = (worldSlug: string) =>
 export const verifiedCodes = codes.filter((c) => c.status === "verified");
 export const reportedCodes = codes.filter((c) => c.status === "reported");
 
+/** Emerald total claimed by the codes list — derived so it cannot drift when codes are added. */
+export const codesEmeraldTotal = codes.reduce(
+  (sum, c) => sum + Number(/^\d+/.exec(c.reward)?.[0] ?? 0),
+  0,
+);
+
 /** Rarity ladder, weakest to strongest. Drives badge tint and sort order. */
 export const RARITY_ORDER = ["Rare", "Epic", "Legendary", "Mythical", "Secret", "Broken"];
 
