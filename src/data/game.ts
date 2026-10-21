@@ -38,18 +38,35 @@ export type Companion = {
 export type Boss = {
   name: string;
   slug: string;
+  /** The label the game shows over the boss and in View Drops ("Saiyan Prince"). */
+  gameName: string;
+  anime: string;
   world: string;
   worldName: string;
+  worldOrder: number;
   location: string;
+  intro: string;
+  steps: string[];
   accessory: string;
+  accessorySlot: string | null;
   accessoryStat: string;
   accessoryMax: string | null;
+  avatar: string;
+  /** null = the multiplier never showed on screen in footage we checked. */
+  avatarMultiplier: string | null;
   avatarDrop: string | null;
+  otherDrops: string[];
   verified: boolean;
   tips: string[];
+  faq: { q: string; a: string }[];
+  /** Creator videos the location and drops were read from. */
+  sources: string[];
   image: string | null;
   imageAlt: string | null;
 };
+
+/** Secret bosses with a confirmed route but no confirmed drops yet — listed, not given pages. */
+export type NewBoss = { name: string; where: string; route: string; source: string };
 
 export type Pet = {
   name: string;
@@ -71,6 +88,7 @@ export const game = raw.game;
 export const worlds = raw.worlds as World[];
 export const companions = raw.companions as Companion[];
 export const bosses = raw.bosses as Boss[];
+export const newBosses = raw.newBosses as NewBoss[];
 export const pets = raw.pets as Pet[];
 export const petRules = raw.petRules as string[];
 export const races = raw.races;

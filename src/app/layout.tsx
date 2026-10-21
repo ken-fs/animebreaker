@@ -28,14 +28,14 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Anime Breaker codes, secret bosses and companion odds",
-    template: "%s | Anime Breaker Reference",
+    default: "Anime Breaker Wiki — codes, secret bosses and accessories",
+    template: "%s | Anime Breaker Wiki",
   },
   description:
     "Every working Anime Breaker code, all eight worlds, secret boss locations and drops, companions, pets, races, shadows and the new Class Tree. Fan-made, no invented numbers.",
   openGraph: {
     type: "website",
-    siteName: "Anime Breaker Reference",
+    siteName: "Anime Breaker Wiki",
     images: [{ url: "/og.jpg", width: 1200, height: 630 }],
   },
   robots: { index: true, follow: true },
@@ -65,7 +65,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         />
       </head>
       <body className="flex min-h-full flex-col antialiased">
-        <WebsiteJsonLd site={SITE_URL} name="Anime Breaker Reference" />
+        <WebsiteJsonLd site={SITE_URL} name="Anime Breaker Wiki" />
         <SiteNav />
         <main className="flex-1">{children}</main>
         <SiteFooter />
@@ -81,7 +81,7 @@ function SiteFooter() {
       <div className="mx-auto w-full max-w-6xl px-5 py-10">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
           <div className="max-w-md">
-            <p className="text-sm font-medium">Anime Breaker Reference</p>
+            <p className="text-sm font-medium">Anime Breaker Wiki</p>
             <p className="mt-2 text-sm text-muted-foreground">
               An independent player reference. Not affiliated with the Anime Breaker
               developers or Roblox Corporation. Game names and assets belong to their

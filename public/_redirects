@@ -1,3 +1,6 @@
 # Cloudflare's asset uploader skips dot-directories, so the deploy marker ships
 # as /deploy-marker.txt. This rewrite keeps the fleet-standard URL working.
 /.well-known/anvilwiki-deploy.txt  /deploy-marker.txt  200
+# 2026-10-21: the Sin Village boss is Escanor (Lion Sin), not Meliodas
+/bosses/meliodas/  /bosses/escanor/  301
+/bosses/meliodas  /bosses/escanor/  301

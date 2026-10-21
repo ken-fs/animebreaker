@@ -4,7 +4,7 @@ import { gaps, game } from "@/data/game";
 export const metadata: Metadata = {
   title: "About: sources, rules and known gaps",
   description:
-    "How Anime Breaker Reference collects and verifies data, what creator-reported means, and the full list of known gaps we refuse to fill with guesses.",
+    "How Anime Breaker Wiki collects and verifies data, what creator-reported means, and the full list of known gaps we refuse to fill with guesses.",
   alternates: { canonical: "/about/" },
 };
 

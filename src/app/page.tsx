@@ -13,9 +13,9 @@ import {
 import { CopyCode } from "@/components/copy-code";
 
 export const metadata: Metadata = {
-  title: "Anime Breaker codes, secret bosses and companion odds",
+  title: { absolute: "Anime Breaker Wiki — codes, secret bosses and accessories" },
   description:
-    "Every working Anime Breaker code, all eight worlds, secret boss locations with guaranteed accessory drops, companions, pets, races, shadows and the Update 1.5 Class Tree. Fan-made, with the source for every fact.",
+    "Anime Breaker wiki: working codes, every secret boss location with its drops, accessories and avatars, companions, pets, races, shadows and the Class Tree. Sources on every page.",
   alternates: { canonical: "/" },
 };
 
@@ -30,12 +30,13 @@ export default function HomePage() {
       <section className="grid items-center gap-10 pt-14 pb-16 lg:grid-cols-[1fr_1.05fr] lg:pt-20">
         <div>
           <h1 className="text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
-            Anime Breaker, mapped and measured
+            Anime Breaker Wiki
           </h1>
+          <p className="mt-3 text-lg font-medium">Mapped and measured, with the source attached.</p>
           <p className="mt-4 max-w-[46ch] text-lg text-muted-foreground">
             {codes.length} codes with verification dates, {worlds.length} worlds,{" "}
-            {bosses.length} secret bosses with exact locations, and every system from
-            Shadows to the new Class Tree — with the source attached.
+            {bosses.length} secret bosses with exact routes and drops, and every system from
+            Shadows to the new Class Tree.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Link
@@ -118,6 +119,67 @@ export default function HomePage() {
         </ol>
       </section>
 
+      {/* Every entity page, one click from the homepage. 2026-10-21: Google dropped
+          /bosses/ and the boss pages from its index as thin; the homepage linked to
+          one boss page only. */}
+      <section className="pb-16">
+        <h2 className="text-sm font-medium">Browse the wiki</h2>
+        <div className="mt-4 grid gap-8 lg:grid-cols-2">
+          <div>
+            <div className="flex items-baseline justify-between gap-3">
+              <h3 className="text-sm text-muted-foreground">Secret bosses ({bosses.length})</h3>
+              <Link href="/bosses/" className="text-xs text-primary underline-offset-4 hover:underline">
+                All locations
+              </Link>
+            </div>
+            <ul className="mt-3 flex flex-wrap gap-2">
+              {[...bosses]
+                .sort((a, b) => a.worldOrder - b.worldOrder)
+                .map((b) => (
+                  <li key={b.slug}>
+                    <IndexChip href={`/bosses/${b.slug}/`}>
+                      {b.worldName}: {b.name}
+                    </IndexChip>
+                  </li>
+                ))}
+            </ul>
+          </div>
+          <div>
+            <div className="flex items-baseline justify-between gap-3">
+              <h3 className="text-sm text-muted-foreground">Companions ({companions.length})</h3>
+              <Link href="/companions/" className="text-xs text-primary underline-offset-4 hover:underline">
+                All companions
+              </Link>
+            </div>
+            <ul className="mt-3 flex flex-wrap gap-2">
+              {companions.map((c) => (
+                <li key={c.slug}>
+                  <IndexChip href={`/companions/${c.slug}/`}>{c.name}</IndexChip>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="lg:col-span-2">
+            <h3 className="text-sm text-muted-foreground">Guides and systems</h3>
+            <ul className="mt-3 flex flex-wrap gap-2">
+              {[
+                ["/codes/", "Codes"],
+                ["/accessories/", "Accessories & avatars"],
+                ["/guide/", "Beginner guide"],
+                ["/classes/", "Class Tree"],
+                ["/shadows/", "Shadows"],
+                ["/races/", "Races"],
+                ["/pets/", "Pets"],
+              ].map(([href, label]) => (
+                <li key={href}>
+                  <IndexChip href={href}>{label}</IndexChip>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section className="pb-16">
         <h2 className="text-sm font-medium">Every multiplier layer, covered separately</h2>
         <p className="mt-1 max-w-[62ch] text-sm text-muted-foreground">
@@ -171,6 +233,7 @@ export default function HomePage() {
             <QuickLink href="/guide/">Beginner guide</QuickLink>
             <QuickLink href="/codes/">Codes</QuickLink>
             <QuickLink href="/bosses/levi/">Levi farm</QuickLink>
+            <QuickLink href="/accessories/">Accessories</QuickLink>
             <QuickLink href="/classes/">Class Tree</QuickLink>
           </div>
         </div>
@@ -199,6 +262,17 @@ function SystemCard({
     >
       <h3 className="font-medium group-hover:text-primary">{title}</h3>
       <p className="mt-2 text-sm text-muted-foreground">{blurb}</p>
+    </Link>
+  );
+}
+
+function IndexChip({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <Link
+      href={href}
+      className="inline-flex h-8 items-center rounded-[var(--radius-control)] border rule bg-card px-3 text-sm transition-colors hover:bg-muted"
+    >
+      {children}
     </Link>
   );
 }

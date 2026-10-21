@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { bosses, companionsByWorld } from "@/data/game";
 import { CopyCode } from "@/components/copy-code";
+import { FaqJsonLd } from "@/components/json-ld";
 
 export function generateStaticParams() {
   return bosses.map((b) => ({ slug: b.slug }));
@@ -16,8 +17,8 @@ export async function generateMetadata({
   const b = bosses.find((x) => x.slug === slug);
   if (!b) return {};
   return {
-    title: `${b.name} secret boss in Anime Breaker: location and drops`,
-    description: `Where to find ${b.name}, the ${b.worldName} secret boss in Anime Breaker. ${b.accessoryStat} accessory drops at 100% — only the rarity varies.${b.avatarDrop ? ` Plus: ${b.avatarDrop}.` : ""}`,
+    title: `${b.worldName} secret boss: ${b.name} location and drops`,
+    description: `Where to find ${b.name} (${b.gameName}), the ${b.worldName} secret boss in Anime Breaker, step by step. ${b.accessory} drops at 100%${b.avatarMultiplier ? `; the 0.01% avatar gives ${b.avatarMultiplier}` : ""}.`.slice(0, 165),
     alternates: { canonical: `/bosses/${b.slug}/` },
   };
 }
@@ -27,7 +28,9 @@ export default async function BossPage({ params }: PageProps<"/bosses/[slug]">) 
   const boss = bosses.find((b) => b.slug === slug);
   if (!boss) notFound();
 
-  const others = bosses.filter((b) => b.slug !== boss.slug);
+  const others = bosses
+    .filter((b) => b.slug !== boss.slug)
+    .sort((a, b) => a.worldOrder - b.worldOrder);
   const worldCompanions = companionsByWorld(boss.world);
 
   return (
@@ -42,12 +45,19 @@ export default async function BossPage({ params }: PageProps<"/bosses/[slug]">) 
         <span className="text-foreground">{boss.name}</span>
       </nav>
 
+      <FaqJsonLd items={boss.faq} />
+
       <header className="pt-6 pb-10">
-        <p className="text-xs text-muted-foreground">{boss.worldName} · secret boss</p>
+        <p className="text-xs text-muted-foreground">
+          World {boss.worldOrder} · {boss.worldName} · secret boss
+        </p>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
-          {boss.name}
+          {boss.worldName} secret boss: {boss.name}
         </h1>
-        <p className="mt-3 max-w-[62ch] text-muted-foreground">{boss.location}.</p>
+        <p className="mt-3 max-w-[62ch] text-muted-foreground">
+          In game: <span className="text-foreground">{boss.gameName}</span> · {boss.anime}
+        </p>
+        <p className="mt-4 max-w-[62ch]">{boss.intro}</p>
       </header>
 
       {boss.image && (
@@ -67,22 +77,37 @@ export default async function BossPage({ params }: PageProps<"/bosses/[slug]">) 
 
       <div className="grid gap-10 pb-16 lg:grid-cols-[1.35fr_1fr]">
         <div>
-          <h2 className="text-sm font-medium">Drops</h2>
+          <h2 className="text-sm font-medium">How to get there</h2>
+          <ol className="mt-4 space-y-3">
+            {boss.steps.map((t, i) => (
+              <li key={i} className="flex max-w-[62ch] gap-3 text-sm">
+                <span className="font-mono text-xs text-muted-foreground tabular">{i + 1}</span>
+                <span>{t}</span>
+              </li>
+            ))}
+          </ol>
+
+          <h2 className="mt-12 text-sm font-medium">Drops</h2>
           <dl className="mt-4 grid grid-cols-1 gap-px overflow-hidden rounded-[var(--radius-container)] border rule bg-border sm:grid-cols-2">
             <Stat
               label="Accessory (100% drop)"
-              value={boss.accessoryStat}
-              sub={`${boss.accessory} — rarity rolls Common → Secret`}
+              value={boss.accessory}
+              sub={`${boss.accessoryStat}${boss.accessorySlot ? ` · ${boss.accessorySlot} slot` : ""} · rarity rolls Common → Secret`}
             />
             <Stat
-              label="Avatar drop"
-              value={boss.avatarDrop ? "Separate roll" : "None confirmed"}
-              sub={boss.avatarDrop ?? "No avatar drop verified for this boss"}
+              label="Avatar (0.01%, drops once)"
+              value={boss.avatarMultiplier ?? "Multiplier not confirmed"}
+              sub={boss.avatar}
             />
           </dl>
           {boss.accessoryMax && (
             <p className="mt-3 text-sm text-muted-foreground">{boss.accessoryMax}.</p>
           )}
+          <ul className="mt-3 space-y-1 text-sm text-muted-foreground">
+            {boss.otherDrops.map((d) => (
+              <li key={d}>Also drops: {d}</li>
+            ))}
+          </ul>
 
           <h2 className="mt-12 text-sm font-medium">Farming notes</h2>
           <ul className="mt-4 space-y-3">
@@ -92,6 +117,21 @@ export default async function BossPage({ params }: PageProps<"/bosses/[slug]">) 
               </li>
             ))}
           </ul>
+
+          <h2 className="mt-12 text-sm font-medium">Questions</h2>
+          <dl className="mt-4 space-y-5">
+            {boss.faq.map((f) => (
+              <div key={f.q} className="max-w-[62ch]">
+                <dt className="text-sm font-medium">{f.q}</dt>
+                <dd className="mt-1 text-sm text-muted-foreground">{f.a}</dd>
+              </div>
+            ))}
+          </dl>
+
+          <p className="mt-12 max-w-[62ch] text-xs text-muted-foreground">
+            Route and drops read from creator gameplay: {boss.sources.join("; ")}. Drop
+            chances and multipliers are copied from the in-game View Drops panel.
+          </p>
         </div>
 
         <aside className="space-y-8">
@@ -127,7 +167,7 @@ export default async function BossPage({ params }: PageProps<"/bosses/[slug]">) 
                   >
                     <span>{b.name}</span>
                     <span className="shrink-0 text-xs text-muted-foreground">
-                      {b.worldName}
+                      W{b.worldOrder} · {b.worldName}
                     </span>
                   </Link>
                 </li>

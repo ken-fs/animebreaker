@@ -17,7 +17,7 @@
       "card": "Alien Card",
       "cardCost": "50 Gold per spin",
       "cardPity": "Legendary pity at 500 spins",
-      "boss": "Vegeta",
+      "boss": "Vegeta (Saiyan Prince)",
       "systems": [
         "Alien Raid (warrior coins, race coins, Saiyan title, Scythe & Plant rings)",
         "Race gacha",
@@ -32,7 +32,7 @@
       "card": "Titan Card",
       "cardCost": null,
       "cardPity": null,
-      "boss": "Levi",
+      "boss": "Levi (Ace Captain)",
       "systems": [
         "Weapon gacha + merging",
         "Titan Raid (weapon tokens, 1.5x Energy title)"
@@ -46,7 +46,7 @@
       "card": "Leaf Card",
       "cardCost": null,
       "cardPity": null,
-      "boss": "Kakashi",
+      "boss": "Kakashi (Copy Ninja)",
       "systems": [
         "Ninja progression (level 100 = 2x Energy)",
         "Eye Technique gacha",
@@ -61,7 +61,7 @@
       "card": "Sin Card",
       "cardCost": null,
       "cardPity": null,
-      "boss": "Meliodas",
+      "boss": "Escanor (Lion Sin)",
       "systems": [
         "Amulet building (Sin raid)",
         "Sin gacha",
@@ -76,7 +76,7 @@
       "card": "Hunter Card",
       "cardCost": "29.2T Gold per spin (creator-observed, late-game price)",
       "cardPity": null,
-      "boss": "Unknown — added in Update 1",
+      "boss": "The Goliath",
       "systems": [
         "Portals (C/B/A/S ranks) + Shadows",
         "Hunter Raid",
@@ -92,7 +92,7 @@
       "card": "Pirate Card",
       "cardCost": null,
       "cardPity": null,
-      "boss": "Unknown — added in Update 2 (22 September 2026)",
+      "boss": "Fire Fist",
       "systems": [
         "Harbor feature — berries and devil fruit passives"
       ]
@@ -105,7 +105,7 @@
       "card": "Clover Card",
       "cardCost": null,
       "cardPity": null,
-      "boss": "Unknown — shipped with a secret boss in Update 3 (30 September 2026)",
+      "boss": "Anti Magic",
       "systems": [
         "Magic Stats — spin four graded multipliers",
         "Magic Knight Hub — Clover awakening quests and grimoire stats",
@@ -122,7 +122,7 @@
       "card": "Ghoul Card",
       "cardCost": null,
       "cardPity": null,
-      "boss": "Unknown — secret boss in the Ghoul Lab (6 October 2026)",
+      "boss": "CCG Reaper",
       "systems": [
         "Ghoul Lab"
       ]
@@ -204,78 +204,402 @@
     {
       "name": "Vegeta",
       "slug": "vegeta",
+      "gameName": "Saiyan Prince",
+      "anime": "Vegeta (Dragon Ball)",
       "world": "alien-planet",
       "worldName": "Alien Planet",
-      "location": "Hidden area off the main path — look for the giant rock with an invisible opening",
-      "accessory": "Scouter",
-      "accessoryStat": "Power (Energy)",
-      "accessoryMax": "Secret tier rolls 2.5x → 4.5x (creator-measured)",
-      "avatarDrop": null,
-      "verified": true,
-      "tips": [
-        "The tutorial secret boss — killable early, and the accessory always drops.",
-        "Every kill is a rarity roll (Common → Secret). Keep farming until a high roll lands.",
-        "Worth returning to at endgame: a Secret Scouter is one of the biggest early Energy boosts."
+      "worldOrder": 1,
+      "location": "At the far edge of the map past the Alien Raid — climb the cliffs and walk into the opening in the mountain",
+      "intro": "The World 1 secret boss is Vegeta, labelled Saiyan Prince in game. He's the one most players find first, and he's worth coming back to: his accessory is an Energy roll, and his avatar is the first big Energy multiplier you can farm.",
+      "steps": [
+        "Spawn in Alien Planet and head straight until you reach the Alien Raid.",
+        "Jump over the raid area and keep going to the very edge of the map.",
+        "Climb the cliffs there. The mountain has an opening you can walk into, and Vegeta is sitting inside."
       ],
-      "image": null,
-      "imageAlt": null
+      "accessory": "Scouter",
+      "accessorySlot": null,
+      "accessoryStat": "Energy",
+      "accessoryMax": "Secret tier rolls 2.5x → 4.5x (creator-measured)",
+      "avatar": "Saiyan Prince avatar",
+      "avatarMultiplier": "8x Energy",
+      "avatarDrop": "Saiyan Prince avatar — 8x Energy, 0.01%, drops only once",
+      "otherDrops": [
+        "Gold ×24,300 (guaranteed)",
+        "Alien Raid Ticket — 5%"
+      ],
+      "tips": [
+        "Kill him as soon as your team can — the accessory always drops, so even early kills are progress.",
+        "Every kill re-rolls the Scouter's rarity (Common → Secret). Keep the best one and keep farming.",
+        "SMG Infinity's run showed him at about 750M HP; he's the easiest secret boss to camp for the 0.01% avatar.",
+        "Every secret boss accessory has a Secret pity of 10,000 kills — the counter shows in the drop tooltip (e.g. 943/10,000)."
+      ],
+      "faq": [
+        {
+          "q": "Where is the secret boss in World 1 of Anime Breaker?",
+          "a": "Past the Alien Raid at the edge of the map. Climb the cliffs and walk into the opening in the mountain — Vegeta (Saiyan Prince) is inside."
+        },
+        {
+          "q": "What does the Saiyan Prince avatar do?",
+          "a": "It gives 8x Energy. The drop chance is 0.01% and it only drops once."
+        }
+      ],
+      "sources": [
+        "SMG Infinity — How to Find ALL SECRET BOSS Locations (16 Oct 2026)",
+        "KiraX Blox — All Secret Boss Locations (6 Oct 2026)"
+      ],
+      "verified": true,
+      "image": "/game/vegeta-drops.webp",
+      "imageAlt": "Saiyan Prince View Drops panel: 0.01% avatar (8x Energy, drops only once), 100% Random Accessory [Alien Planet], Gold and a 5% Alien Raid Ticket"
     },
     {
       "name": "Levi",
       "slug": "levi",
+      "gameName": "Ace Captain",
+      "anime": "Levi (Attack on Titan)",
       "world": "titan-district",
       "worldName": "Titan District",
-      "location": "Behind a fake wall in the corner of the map",
-      "accessory": "Levi's cloak",
+      "worldOrder": 2,
+      "location": "Behind the Titan energy gear near spawn — go to the far corner, climb the cliffs and walk through the gap in the wall",
+      "intro": "Levi (Ace Captain in game) is the World 2 secret boss and the first one that's worth a long camp. His accessory is a Damage cape, and his avatar jumps from Vegeta's 8x to 12x Energy.",
+      "steps": [
+        "Right after you enter Titan District, turn right and go behind the Titan energy gear.",
+        "Keep going to the very corner of the map and climb the cliffs.",
+        "Look for the opening in the wall and walk through. Levi is behind it."
+      ],
+      "accessory": "Captain Cape",
+      "accessorySlot": "Back",
       "accessoryStat": "Damage",
       "accessoryMax": null,
-      "avatarDrop": "Levi Avatar — 12x Energy, 0.01% drop (in-game View Drops panel)",
-      "verified": true,
-      "tips": [
-        "The first secret boss that upgrades your build twice: accessory plus a separate avatar drop.",
-        "The 12x Energy Levi Avatar is one of the biggest single upgrades in the game — players camp World 2 for it long after unlocking the portal.",
-        "Accessory drops at 100%; only the rarity varies."
+      "avatar": "Ace Captain avatar",
+      "avatarMultiplier": "12x Energy",
+      "avatarDrop": "Ace Captain avatar — 12x Energy, 0.01%, drops only once",
+      "otherDrops": [
+        "Gold (guaranteed)",
+        "Titan Raid Ticket — 5%"
       ],
+      "tips": [
+        "The cape drops every kill; only the rarity changes. It was the best back-slot Damage accessory when SMG Infinity recorded.",
+        "The 12x Energy avatar is the reason players stay in World 2 long after unlocking the next portal.",
+        "Every secret boss accessory has a Secret pity of 10,000 kills — the counter shows in the drop tooltip (e.g. 943/10,000)."
+      ],
+      "faq": [
+        {
+          "q": "Where is Levi in Anime Breaker?",
+          "a": "In Titan District. Turn right after entering, go behind the Titan energy gear to the corner of the map, climb the cliffs and walk through the gap in the wall."
+        },
+        {
+          "q": "What does the Levi (Ace Captain) avatar give?",
+          "a": "12x Energy, at a 0.01% drop chance. It only drops once."
+        }
+      ],
+      "sources": [
+        "SMG Infinity — How to Find ALL SECRET BOSS Locations (16 Oct 2026)",
+        "KiraX Blox — All Secret Boss Locations (6 Oct 2026)",
+        "Raiderblox_YT gameplay (View Drops panel)"
+      ],
+      "verified": true,
       "image": "/game/levi-drops.webp",
-      "imageAlt": "Levi's in-game View Drops panel: 0.01% avatar, 100% accessory, Gold and a 4% raid ticket"
+      "imageAlt": "Levi's in-game View Drops panel: 0.01% avatar, 100% accessory, Gold and a 5% raid ticket"
     },
     {
       "name": "Kakashi",
       "slug": "kakashi",
+      "gameName": "Copy Ninja",
+      "anime": "Kakashi (Naruto)",
       "world": "hidden-leaf",
       "worldName": "Hidden Leaf",
-      "location": "Behind the mansion — find the fake wall and DASH through it (walking does not work)",
-      "accessory": "Kakashi's accessory",
+      "worldOrder": 3,
+      "location": "Behind the Hokage building — go round the back and walk into the opening in the carved-faces mountain",
+      "intro": "Hidden Leaf's secret boss is Kakashi, called Copy Ninja in game. He drops the Ninja Vest, a Gold accessory, so he's the boss to farm when card spins are what's holding you back.",
+      "steps": [
+        "Spawn in Hidden Leaf and find the Hokage building, the big main building ahead of you.",
+        "Go around to the back of it — jump over or walk around, either works.",
+        "Behind it is the mountain with the carved faces. There's an opening into the mountain; go inside and Kakashi is there."
+      ],
+      "accessory": "Ninja Vest",
+      "accessorySlot": null,
       "accessoryStat": "Gold",
       "accessoryMax": null,
-      "avatarDrop": null,
-      "verified": true,
-      "tips": [
-        "The dash requirement trips up most players — sprint into the fake wall, don't walk.",
-        "Gold bonus compounds with Gold events and potions for faster card rolls.",
-        "Pair with a Gold event window for the best farming math."
+      "avatar": "Copy Ninja avatar",
+      "avatarMultiplier": null,
+      "avatarDrop": "Copy Ninja avatar — 0.01%, drops only once",
+      "otherDrops": [
+        "Gold (guaranteed)",
+        "Leaf Raid Ticket — 5%"
       ],
+      "tips": [
+        "If walking into the opening doesn't take you through, dash into it instead — an earlier creator run needed the dash.",
+        "The Ninja Vest is a Gold roll (SMG Infinity: double Gold). Stack it with Gold events and potions for faster card spins.",
+        "The Copy Ninja avatar is in the drop panel at 0.01%, but no footage we checked shows its multiplier, so we don't list one.",
+        "Every secret boss accessory has a Secret pity of 10,000 kills — the counter shows in the drop tooltip (e.g. 943/10,000)."
+      ],
+      "faq": [
+        {
+          "q": "Where is Kakashi in Anime Breaker?",
+          "a": "In Hidden Leaf, behind the Hokage building. Walk into the opening in the carved-faces mountain behind it."
+        },
+        {
+          "q": "Does Kakashi drop an avatar?",
+          "a": "Yes — the Copy Ninja avatar, at 0.01%, drops only once. Its multiplier isn't confirmed here yet."
+        }
+      ],
+      "sources": [
+        "SMG Infinity — How to Find ALL SECRET BOSS Locations (16 Oct 2026)",
+        "KiraX Blox — All Secret Boss Locations (6 Oct 2026)",
+        "Raiderblox_YT gameplay (View Drops panel)"
+      ],
+      "verified": true,
       "image": "/game/kakashi-drops.webp",
-      "imageAlt": "The Copy Ninja's in-game View Drops panel: 100% accessory, Gold and raid ticket"
+      "imageAlt": "The Copy Ninja's in-game View Drops panel: 0.01% avatar, 100% accessory, Gold and a raid ticket"
     },
     {
-      "name": "Meliodas",
-      "slug": "meliodas",
+      "name": "Escanor",
+      "slug": "escanor",
+      "gameName": "Lion Sin",
+      "anime": "Escanor (The Seven Deadly Sins)",
       "world": "sin-village",
       "worldName": "Sin Village",
-      "location": "Under the waterfall near the bridge (below the lake)",
-      "accessory": "Meliodas accessory",
-      "accessoryStat": "Energy",
-      "accessoryMax": null,
-      "avatarDrop": "Meliodas Avatar — 0.01% drop (in-game View Drops panel), the rarest hunt in the game",
-      "verified": true,
-      "tips": [
-        "The final boss accessory in the chain, and it is an Energy roll.",
-        "The ~0.01% avatar is a long Drop-potion session, not a one-off visit.",
-        "Stack Drop potion + the 1.5x Drop mount before camping him."
+      "worldOrder": 4,
+      "location": "In a small cave by the waterfall — head to the bridge, then look left instead of crossing",
+      "intro": "The Sin Village secret boss is Escanor, labelled Lion Sin in game. (This page used to call him Meliodas — the in-game name and the avatar both say Lion Sin, so we've fixed it.) His avatar is 27x Energy, more than three times Vegeta's.",
+      "steps": [
+        "Head toward the bridge in Sin Village.",
+        "Don't cross to the right — look left, toward the waterfall.",
+        "On the far side of the waterfall there's a small cave. Walk in and the Lion Sin is waiting."
       ],
-      "image": "/game/meliodas-drops.webp",
-      "imageAlt": "Meliodas's in-game View Drops panel: 0.01% avatar, 100% accessory, Gold and raid ticket"
+      "accessory": "Random Accessory [Sin Village]",
+      "accessorySlot": "Back",
+      "accessoryStat": "Energy",
+      "accessoryMax": "Secret tier boosts about 4.5x (creator-measured)",
+      "avatar": "Lion Sin avatar",
+      "avatarMultiplier": "27x Energy",
+      "avatarDrop": "Lion Sin avatar — 27x Energy, 0.01%, drops only once",
+      "otherDrops": [
+        "Gold (guaranteed)",
+        "Sin Raid Ticket — 5%"
+      ],
+      "tips": [
+        "One of the easiest secret bosses to find without a guide — the waterfall cave is a classic hiding spot.",
+        "SMG Infinity called his back accessory the best Energy accessory at the time of recording.",
+        "The 27x avatar is a long Drop-potion session at 0.01%. Stack a Drop potion and the 1.5x Drop mount before camping.",
+        "Every secret boss accessory has a Secret pity of 10,000 kills — the counter shows in the drop tooltip (e.g. 943/10,000)."
+      ],
+      "faq": [
+        {
+          "q": "Where is the Sin Village secret boss?",
+          "a": "In a small cave on the far side of the waterfall. Go to the bridge, look left, and walk into the cave."
+        },
+        {
+          "q": "Is the World 4 boss Meliodas or Escanor?",
+          "a": "Escanor. The game labels him Lion Sin, and his avatar is the Lion Sin avatar (27x Energy)."
+        }
+      ],
+      "sources": [
+        "SMG Infinity — How to Find ALL SECRET BOSS Locations (16 Oct 2026)",
+        "KiraX Blox — All Secret Boss Locations (6 Oct 2026)",
+        "Raiderblox_YT gameplay (View Drops panel)"
+      ],
+      "verified": true,
+      "image": "/game/escanor-drops.webp",
+      "imageAlt": "Lion Sin's in-game View Drops panel: 0.01% avatar, 100% Random Accessory [Sin Village], Gold and a 5% Sin Raid Ticket"
+    },
+    {
+      "name": "The Goliath",
+      "slug": "the-goliath",
+      "gameName": "The Goliath",
+      "anime": "Hunter x Hunter",
+      "world": "hunter-city",
+      "worldName": "Hunter City",
+      "worldOrder": 5,
+      "location": "On the top floor of the building next to the giant crystal by the ant progression machine — climb the crystal and jump in",
+      "intro": "Hunter City's secret boss is The Goliath, and he's the one most players can't find on their own. The route is a climb up a huge crystal and a jump into a building. His avatar is 40.5x Energy and his accessory, Antares Armor, is a Damage piece.",
+      "steps": [
+        "Find the ant progression machine. It's near the red car.",
+        "Next to it is a giant crystal. Climb it — hug the crystal as tightly as you can while jumping. It looks impossible at first, but you can reach the top.",
+        "From the top, jump onto the upper floor of the building next to it and go inside. The Goliath is there."
+      ],
+      "accessory": "Antares Armor",
+      "accessorySlot": null,
+      "accessoryStat": "Damage",
+      "accessoryMax": null,
+      "avatar": "The Goliath avatar",
+      "avatarMultiplier": "40.5x Energy",
+      "avatarDrop": "The Goliath avatar — 40.5x Energy, 0.01%, drops only once",
+      "otherDrops": [
+        "Gold ×1.35Qa (guaranteed)",
+        "Hunter Raid Ticket — 5%"
+      ],
+      "tips": [
+        "The crystal climb is the hard part. If you keep sliding off, get closer to the crystal before each jump.",
+        "Antares Armor was the best Damage accessory when SMG Infinity recorded (mid-October). Newer worlds may top it.",
+        "SMG Infinity called the 40.5x avatar one of the hardest to get — it's 0.01%, so plan for a long session.",
+        "Every secret boss accessory has a Secret pity of 10,000 kills — the counter shows in the drop tooltip (e.g. 943/10,000)."
+      ],
+      "faq": [
+        {
+          "q": "Where is the Hunter City secret boss in Anime Breaker?",
+          "a": "Find the ant progression machine near the red car, climb the giant crystal next to it, then jump onto the top floor of the building and go inside. The boss is The Goliath."
+        },
+        {
+          "q": "What does The Goliath drop?",
+          "a": "Antares Armor (100%, Damage), Gold, a 5% Hunter Raid Ticket and a 0.01% avatar worth 40.5x Energy."
+        }
+      ],
+      "sources": [
+        "SMG Infinity — How to Find ALL SECRET BOSS Locations (16 Oct 2026)",
+        "KiraX Blox — All Secret Boss Locations (6 Oct 2026)"
+      ],
+      "verified": true,
+      "image": "/game/goliath-drops.webp",
+      "imageAlt": "The Goliath View Drops panel: 0.01% avatar (40.5x Energy, drops only once), 100% Random Accessory [Hunter City], Gold and a 5% Hunter Raid Ticket"
+    },
+    {
+      "name": "Fire Fist",
+      "slug": "fire-fist",
+      "gameName": "Fire Fist",
+      "anime": "Ace (One Piece)",
+      "world": "pirate-village",
+      "worldName": "Pirate Village",
+      "worldOrder": 6,
+      "location": "At the first windmill on your right after you spawn — no climbing needed",
+      "intro": "Pirate Village's secret boss is Fire Fist — Ace from One Piece. He's one of the easier ones to reach: turn right when you spawn. He drops the Fire Fist Hat, a Gold accessory, and a 60.75x Energy avatar.",
+      "steps": [
+        "Spawn in Pirate Village and turn right straight away.",
+        "Head to the first windmill on that side. You don't need to climb to the top of it.",
+        "Fire Fist is right there at the windmill."
+      ],
+      "accessory": "Fire Fist Hat",
+      "accessorySlot": "Head",
+      "accessoryStat": "Gold",
+      "accessoryMax": null,
+      "avatar": "Fire Fist avatar",
+      "avatarMultiplier": "60.75x Energy",
+      "avatarDrop": "Fire Fist avatar — 60.75x Energy, 0.01%, drops only once",
+      "otherDrops": [
+        "Gold (guaranteed)",
+        "Pirate Raid Ticket — 5%"
+      ],
+      "tips": [
+        "The Fire Fist Hat is a head-slot Gold accessory (2x in the inventory panel). Pair it with Kakashi's Ninja Vest and the Anti Magic Wing for a full Gold setup.",
+        "Easy to reach, so it's a good boss to leave running on auto while you do other things nearby.",
+        "Every secret boss accessory has a Secret pity of 10,000 kills — the counter shows in the drop tooltip (e.g. 943/10,000)."
+      ],
+      "faq": [
+        {
+          "q": "Where is the Pirate Village secret boss?",
+          "a": "Turn right as soon as you spawn and go to the first windmill. Fire Fist (Ace) is there."
+        },
+        {
+          "q": "What does Fire Fist drop in Anime Breaker?",
+          "a": "The Fire Fist Hat (100%, Gold), Gold, a 5% Pirate Raid Ticket and a 0.01% avatar worth 60.75x Energy."
+        }
+      ],
+      "sources": [
+        "SMG Infinity — How to Find ALL SECRET BOSS Locations (16 Oct 2026)"
+      ],
+      "verified": true,
+      "image": "/game/fire-fist-drops.webp",
+      "imageAlt": "Fire Fist View Drops panel: 0.01% avatar (60.75x Energy, drops only once), 100% Random Accessory [Pirate Village], Gold and a 5% Pirate Raid Ticket"
+    },
+    {
+      "name": "Anti Magic",
+      "slug": "anti-magic",
+      "gameName": "Anti Magic",
+      "anime": "Asta (Black Clover)",
+      "world": "clover-village",
+      "worldName": "Clover Village",
+      "worldOrder": 7,
+      "location": "At the very top of the big magic tower — climb via the trees with a mount, double jump and dash",
+      "intro": "Clover Village hides Anti Magic — Asta from Black Clover — at the top of the main magic tower. Getting up there is a parkour job. His avatar is 91.12x Energy, and the Anti Magic Wing is a Gold accessory.",
+      "steps": [
+        "Find the big magic tower in the middle of Clover Village. The boss is at the very top.",
+        "Jump onto one of the trees next to the tower to start the climb.",
+        "Get on your mount for extra speed, double jump toward the tower, then dash. No mount, or it's too slow? Double jump and spam your dash key (Q) instead.",
+        "Keep going until you're on top — Anti Magic is waiting there."
+      ],
+      "accessory": "Anti Magic Wing",
+      "accessorySlot": "Back",
+      "accessoryStat": "Gold",
+      "accessoryMax": null,
+      "avatar": "Anti Magic avatar",
+      "avatarMultiplier": "91.12x Energy",
+      "avatarDrop": "Anti Magic avatar — 91.12x Energy, 0.01%, drops only once",
+      "otherDrops": [
+        "Gold ×320Qi (guaranteed)",
+        "Clover Raid Ticket — 5%"
+      ],
+      "tips": [
+        "On keyboard the climb is fairly easy. On phone it's harder — the mount plus dash is what makes the gap.",
+        "The Anti Magic Wing is a Gold roll (SMG Infinity: double Gold), so it belongs in a Gold setup with the Ninja Vest and Fire Fist Hat.",
+        "Every secret boss accessory has a Secret pity of 10,000 kills — the counter shows in the drop tooltip (e.g. 943/10,000)."
+      ],
+      "faq": [
+        {
+          "q": "Where is the Clover Village secret boss?",
+          "a": "At the top of the main magic tower. Climb from the trees beside it using your mount, a double jump and dash."
+        },
+        {
+          "q": "What does the Anti Magic avatar give?",
+          "a": "91.12x Energy at a 0.01% drop chance. It only drops once."
+        }
+      ],
+      "sources": [
+        "SMG Infinity — How to Find ALL SECRET BOSS Locations (16 Oct 2026)"
+      ],
+      "verified": true,
+      "image": "/game/anti-magic-drops.webp",
+      "imageAlt": "Anti Magic View Drops panel: 0.01% avatar (91.12x Energy, drops only once), 100% Random Accessory [Clover Village], Gold and a 5% Clover Raid Ticket"
+    },
+    {
+      "name": "CCG Reaper",
+      "slug": "ccg-reaper",
+      "gameName": "CCG Reaper",
+      "anime": "Arima (Tokyo Ghoul)",
+      "world": "ghoul-city",
+      "worldName": "Ghoul City",
+      "worldOrder": 8,
+      "location": "Up an invisible ladder in a corner of Ghoul City — climb to the top, turn right, then drop down into the hall",
+      "intro": "Ghoul City's secret boss is the CCG Reaper — Arima from Tokyo Ghoul. The route uses a ladder you can't see. His avatar is the biggest in the game so far at 136x Energy, and he drops the Ghoul Mask, a Damage accessory.",
+      "steps": [
+        "Turn auto-tap off first. With it on your character keeps walking and the climb gets annoying.",
+        "Walk into the corner where the hidden ladder is. You won't see an outline, but walking into it starts the climb.",
+        "Climb all the way to the top, turn right, and head down into the hall (DomiBlox: stay right to the top, then jump down the hole).",
+        "The CCG Reaper is down there."
+      ],
+      "accessory": "Ghoul Mask",
+      "accessorySlot": null,
+      "accessoryStat": "Damage",
+      "accessoryMax": null,
+      "avatar": "CCG Reaper avatar",
+      "avatarMultiplier": "136x Energy",
+      "avatarDrop": "CCG Reaper avatar — 136x Energy, 0.01%, drops only once",
+      "otherDrops": [
+        "Gold ×155Sx (guaranteed)",
+        "Ghoul Raid Ticket — 5%"
+      ],
+      "tips": [
+        "DomiBlox's verdict: the avatar, the mask, Gold and Ghoul Raid Tickets make him the best farm in Ghoul City.",
+        "The Ghoul Mask is a Damage roll (SMG Infinity: 2x Damage).",
+        "SMG Infinity's maxed avatar showed level 20 — the avatar levels up, so it keeps getting better after the drop.",
+        "Every secret boss accessory has a Secret pity of 10,000 kills — the counter shows in the drop tooltip (e.g. 943/10,000)."
+      ],
+      "faq": [
+        {
+          "q": "Where is the Ghoul City secret boss in Anime Breaker?",
+          "a": "Turn off auto-tap, climb the invisible ladder in the corner, go right at the top and drop down into the hall. The boss is the CCG Reaper."
+        },
+        {
+          "q": "What is the best avatar in Anime Breaker?",
+          "a": "Of the secret boss avatars, the CCG Reaper's 136x Energy is the highest so far."
+        }
+      ],
+      "sources": [
+        "SMG Infinity — How to Find ALL SECRET BOSS Locations (16 Oct 2026)",
+        "DomiBlox — Update 4 Guide, Ghoul City (10 Oct 2026)"
+      ],
+      "verified": true,
+      "image": "/game/ccg-reaper-drops.webp",
+      "imageAlt": "CCG Reaper View Drops panel: 0.01% avatar (136x Energy, drops only once), 100% Random Accessory [Ghoul City], Gold and a 5% Ghoul Raid Ticket"
     }
   ],
   "pets": [
@@ -847,8 +1171,23 @@
     "Full race list (three confirmed: Namekian, Majin, Frieza).",
     "Full shadow roster (two confirmed: Shadow Monarch, Ant King).",
     "Class names on the Class Tree (system mechanics verified, node names not).",
-    "Hunter City secret boss identity and drops.",
     "Exact card-spin costs and pity rules outside Alien Planet.",
-    "Whether 'Gohan' and 'Majin Vegeta' heard in creator footage are companions, avatars, or both."
+    "Whether 'Gohan' and 'Majin Vegeta' heard in creator footage are companions, avatars, or both.",
+    "Drops for the two newest secret bosses (Special Grade Sorcerer in Cursed High, Beast Demon in the Halloween zone): only the route is confirmed so far.",
+    "The Copy Ninja (Kakashi) avatar multiplier."
+  ],
+  "newBosses": [
+    {
+      "name": "Special Grade Sorcerer",
+      "where": "Cursed High (Zone 9)",
+      "route": "From the spawn, climb the orange cliff with the trees, get onto the big school building, cross its white roof and drop into the courtyard behind it.",
+      "source": "HirukoTxT — Cursed High & Halloween secret boss locations (18 Oct 2026)"
+    },
+    {
+      "name": "Beast Demon",
+      "where": "Halloween 2026 event zone",
+      "route": "Teleport into Halloween 2026, follow the canyon, climb the rocks and head into the purple cavern at the back.",
+      "source": "HirukoTxT — Cursed High & Halloween secret boss locations (18 Oct 2026)"
+    }
   ]
 }
