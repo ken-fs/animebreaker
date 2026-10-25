@@ -692,6 +692,34 @@
   },
   "codes": [
     {
+      "code": "HALLOWEENZONE2",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-25"
+    },
+    {
+      "code": "HOLLOW",
+      "reward": "200 Emeralds and Potions",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-25"
+    },
+    {
+      "code": "122KFAVORITES",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-25"
+    },
+    {
+      "code": "22MVISITS",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-25"
+    },
+    {
       "code": "SHUTSHUT",
       "reward": "200 Emeralds",
       "tier": "feature",
