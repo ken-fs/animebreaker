@@ -4,7 +4,7 @@ import { bosses, newBosses } from "@/data/game";
 import { EntityListJsonLd, FaqJsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "All Anime Breaker secret boss locations (Worlds 1–9 + Halloween)",
+  title: "Anime Breaker secret bosses: all locations and drops (Worlds 1–9 + Halloween)",
   description:
     "Every Anime Breaker secret boss, world by world: exact routes, the 100% accessory each one drops and the 0.01% avatar multipliers, read off the in-game drop panel.",
   alternates: { canonical: "/bosses/" },
@@ -20,6 +20,10 @@ const faq = [
   {
     q: "Do secret boss accessories always drop?",
     a: "Yes. The accessory is a 100% drop on every kill — only its rarity changes, from Common up to Secret. There is a Secret pity of 10,000 kills.",
+  },
+  {
+    q: "Where do I find the secret boss in Anime Breaker?",
+    a: "Each world has its own, usually behind a fake wall or up a hard climb. Find your world in the table above and open its page for the exact route.",
   },
   {
     q: "What is the best secret boss avatar?",
@@ -42,8 +46,8 @@ export default function BossesPage() {
           Anime Breaker secret bosses: every location
         </h1>
         <p className="mt-3 max-w-[62ch] text-muted-foreground">
-          Every world hides one secret boss behind a fake wall, up a climb or inside a
-          cave. Each one drops its accessory on every kill — only the rarity changes —
+          Every world has a secret boss, and this page lists all of them with routes and
+          drops. Each one hides behind a fake wall, up a climb or inside a cave, and each one drops its accessory on every kill — only the rarity changes —
           plus a 0.01% avatar that drops once. Below is each boss in world order with the
           route and the drops, read off the in-game View Drops panel.
         </p>
