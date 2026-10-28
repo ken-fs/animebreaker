@@ -4,7 +4,7 @@ import { bosses, newBosses } from "@/data/game";
 import { EntityListJsonLd, FaqJsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Anime Breaker secret bosses: all locations and drops (Worlds 1–9 + Halloween)",
+  title: "Anime Breaker secret boss locations and drops (all worlds)",
   description:
     "Every Anime Breaker secret boss, world by world: exact routes, the 100% accessory each one drops and the 0.01% avatar multipliers, read off the in-game drop panel.",
   alternates: { canonical: "/bosses/" },
@@ -46,8 +46,9 @@ export default function BossesPage() {
           Anime Breaker secret bosses: every location
         </h1>
         <p className="mt-3 max-w-[62ch] text-muted-foreground">
-          Every world has a secret boss, and this page lists all of them with routes and
-          drops. Each one hides behind a fake wall, up a climb or inside a cave, and each one drops its accessory on every kill — only the rarity changes —
+          Each Anime Breaker world has one secret boss, hidden off the main path. Beat it and
+          its accessory drops every time; the rare avatar is a 0.01% drop. This page lists
+          every one with routes and drops. Each one hides behind a fake wall, up a climb or inside a cave, and each one drops its accessory on every kill — only the rarity changes —
           plus a 0.01% avatar that drops once. Below is each boss in world order with the
           route and the drops, read off the in-game View Drops panel.
         </p>
