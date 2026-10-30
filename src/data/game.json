@@ -692,6 +692,34 @@
   },
   "codes": [
     {
+      "code": "23MVISITS",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "code": "123KFAVORITES",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "code": "ESDEATH",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-30"
+    },
+    {
+      "code": "ZANPAKUTOS",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-10-30"
+    },
+    {
       "code": "HALLOWEENZONE2",
       "reward": "200 Emeralds",
       "tier": "feature",
