@@ -692,6 +692,27 @@
   },
   "codes": [
     {
+      "code": "25MVISITS",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-11-01"
+    },
+    {
+      "code": "125KFAVORITES",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-11-01"
+    },
+    {
+      "code": "HALLOWEENZONE3",
+      "reward": "200 Emeralds, 2 Drop, 2 Luck, 2 Gold, 2 Damage and 2 Energy Potions",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-01"
+    },
+    {
       "code": "23MVISITS",
       "reward": "200 Emeralds",
       "tier": "milestone",
