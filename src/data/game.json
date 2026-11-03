@@ -692,6 +692,27 @@
   },
   "codes": [
     {
+      "code": "SHUTZOMBIES",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-03"
+    },
+    {
+      "code": "BREATHING",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-03"
+    },
+    {
+      "code": "NICHIRIN",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-03"
+    },
+    {
       "code": "25MVISITS",
       "reward": "200 Emeralds",
       "tier": "milestone",
