@@ -692,6 +692,41 @@
   },
   "codes": [
     {
+      "code": "26MVISITS",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-11-07"
+    },
+    {
+      "code": "COLLECTION",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-07"
+    },
+    {
+      "code": "ENDLESSCASTLE",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-07"
+    },
+    {
+      "code": "TRIALHARD",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-07"
+    },
+    {
+      "code": "KURAMA",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-07"
+    },
+    {
       "code": "SHUTZOMBIES",
       "reward": "200 Emeralds",
       "tier": "feature",
