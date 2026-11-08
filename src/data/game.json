@@ -692,6 +692,41 @@
   },
   "codes": [
     {
+      "code": "27MVISITS",
+      "reward": "Free rewards (exact reward unconfirmed)",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "code": "AUTOTRIAL",
+      "reward": "Free rewards (exact reward unconfirmed)",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "code": "BIZARREDESERT",
+      "reward": "Free rewards (exact reward unconfirmed)",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "code": "HORSESTABLE",
+      "reward": "Free rewards (exact reward unconfirmed)",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "code": "BIZARRECRAFT",
+      "reward": "Free rewards (exact reward unconfirmed)",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-08"
+    },
+    {
       "code": "26MVISITS",
       "reward": "200 Emeralds",
       "tier": "milestone",
