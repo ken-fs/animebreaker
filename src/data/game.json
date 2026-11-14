@@ -692,6 +692,41 @@
   },
   "codes": [
     {
+      "code": "30KLIKES",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-11-15"
+    },
+    {
+      "code": "HOLYKNIGHT",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-15"
+    },
+    {
+      "code": "BIZARREPASSIVE",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-15"
+    },
+    {
+      "code": "ROGERSTATS",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-15"
+    },
+    {
+      "code": "STAND",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-15"
+    },
+    {
       "code": "27MVISITS",
       "reward": "Free rewards (exact reward unconfirmed)",
       "tier": "milestone",
