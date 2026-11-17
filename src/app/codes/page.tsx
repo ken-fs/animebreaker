@@ -3,8 +3,13 @@ import { codes, verifiedCodes, reportedCodes, redeemSteps, codesEmeraldTotal } f
 import { CopyCode } from "@/components/copy-code";
 import { FaqJsonLd } from "@/components/json-ld";
 
+// Title month = the newest per-code lastChecked (src/data/game.json), so re-checking the list moves it forward.
+// Never type the month by hand: on 2026-11-17 this title still said "October 2026" after a November re-check.
+const CODES_CHECKED = codes.reduce((m, c) => (c.lastChecked > m ? c.lastChecked : m), "");
+const CHECKED_MONTH = new Date(`${CODES_CHECKED}T00:00:00Z`).toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
+
 export const metadata: Metadata = {
-  title: `Anime Breaker codes (${codes.length} working, October 2026)`,
+  title: `Anime Breaker codes (${codes.length} working, ${CHECKED_MONTH})`,
   description:
     "All working Anime Breaker codes with verification dates: free Emeralds, potion sets and Currency Boxes. Every code is cross-checked against independent sources — tracker pages and in-game footage.",
   alternates: { canonical: "/codes/" },
