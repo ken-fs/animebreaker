@@ -692,6 +692,41 @@
   },
   "codes": [
     {
+      "code": "28MVISITS",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-11-19"
+    },
+    {
+      "code": "DEVILCITY",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-19"
+    },
+    {
+      "code": "CONTRACTS",
+      "reward": "200 Emeralds + 2 of every T3 Potion",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-19"
+    },
+    {
+      "code": "RELICS",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-19"
+    },
+    {
+      "code": "BROKEN",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-19"
+    },
+    {
       "code": "30KLIKES",
       "reward": "200 Emeralds",
       "tier": "milestone",
