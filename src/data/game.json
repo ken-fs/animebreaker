@@ -692,6 +692,41 @@
   },
   "codes": [
     {
+      "code": "126KFAVS",
+      "reward": "200 Emeralds",
+      "tier": "milestone",
+      "status": "verified",
+      "lastChecked": "2026-11-19"
+    },
+    {
+      "code": "NEWBP",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-19"
+    },
+    {
+      "code": "BEASTS",
+      "reward": "200 Emeralds + 2 Energy Potion (T3) + 2 Damage Potion (T3) + 2 Gold Potion (T3) + 2 Luck Potion (T3) + 2 Drop Potion (T3)",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-19"
+    },
+    {
+      "code": "AVATARPASSIVE",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-19"
+    },
+    {
+      "code": "EXTRAMASCOT",
+      "reward": "200 Emeralds",
+      "tier": "feature",
+      "status": "verified",
+      "lastChecked": "2026-11-19"
+    },
+    {
       "code": "28MVISITS",
       "reward": "200 Emeralds",
       "tier": "milestone",
